@@ -6,8 +6,135 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Eudoxus Sans", sans-serif;
+  font-family: "Architects Daughter", sans-serif;
   scroll-behavior: smooth;
+  }
+
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+
+/* architects-daughter-regular - latin */
+@font-face {
+  font-family: "Architects Daughter";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.eot")
+      format("embedded-opentype"),
+    url("../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.woff2")
+      format("woff2"),
+    url("../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.woff")
+      format("woff"),
+    url("../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.ttf")
+      format("truetype"),
+    url("../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.svg")
+      format("svg");
+}
+
+/* BowlbyOneSC/-sc-regular - latin */
+@font-face {
+  font-family: "Bowlby One SC";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.eot")
+      format("embedded-opentype"),
+    url("../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.woff2")
+      format("woff2"),
+    url("../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.woff")
+      format("woff"),
+    url("../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.ttf")
+      format("truetype"),
+    url("../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.svg")
+      format("svg");
+}
+
+
+
+.headingA {
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #ffffff;
+  font-family: "Bowlby One SC";
+}
+
+.headingB {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffcc00;
+  font-family: "Architects Daughter";
+}
+
+.headingC {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: orange;
+  font-family: "Architects Daughter";
+}
+
+.headingD {
+  -webkit-text-stroke-width: 0.66px;
+  -webkit-text-stroke-color: #595959;
+  font-family: "Architects Daughter";
+  font-weight: extrabold;
+}
+
+.headingE {
+  -webkit-text-stroke-width: 3.99px;
+  -webkit-text-stroke-color: #595959;
+  font-family: "Bowlby One SC";
+  font-weight: extrabold;
+}
+
+.headingF {
+  -webkit-text-stroke-width: 2.9px;
+  -webkit-text-stroke-color: #fffffc;
+  font-family: "Bowlby One SC";
+  font-weight: extrabold;
+}
+
+.shape-lighthouse {
+  shape-margin: 80px;
+  float: left;
+  shape-outside: url("/lighthouse3.png");
+  shape-image-threshold: 0.6;
+}
+
+.portraitMick {
+  shape-margin: 80px;
+  shape-outside: url("/portraitmick.png");
+  shape-image-threshold: 0.6;
+  }
+
+
+.newspaperA {
+  columns: 133px 2;
+  color: white;
+  font-family: "Architects Daughter";
+}
+
+.newspaper {
+  columns: 166px 2;
+  column-gap: 6rem;
+  line-height: 0.66rem;
+  color: white;
+  font-family: "Architects Daughter";
+  column-rule: thin inset orange;
+}
+
+.newspaperC {
+  columns: 66px 3;
+  column-gap: 6rem;
+  line-height: 0.66rem;
+  color: white;
+  font-family: "Architects Daughter";
+  columns: 66px 1;
+  column-gap: 6rem;
+  line-height: 0.66rem;
+  color: white;
+  font-family: "Architects Daughter";
+  column-rule: thin inset orange;
 }
 
 .gradient-01 {
@@ -27,9 +154,9 @@
 .hero-gradient {
   background: linear-gradient(
     97.86deg,
-    #a509ff 0%,
-    #34acc7 53.65%,
-    #a134c7 100%
+    #000000 0%,
+    #595959 53.65%,
+    #676767 100%
   );
 }
 
@@ -71,7 +198,7 @@
   left: 30%;
   top: 10%;
 
-  background: rgba(45, 72, 152, 0.75);
+  background: rgba(0, 0, 0, 0.75);
   filter: blur(200px);
   transform: rotate(-53.13deg);
 }
@@ -104,4 +231,87 @@
 
   background: #65c4fa;
   filter: blur(150px);
+}
+.intro-copy {
+  padding: 1em;
+  margin: 50vh auto;
+  max-width: 15em;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 2em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	margin: 0 3em 3em 0;
+	border-radius: 50%;
+	padding: .25em;
+	width: 80px;
+	height: 80px;
+  background-color: #F8F8F8;
+  
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  &.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+	svg {
+		fill: #000;
+		width: 24px;
+		height: 12px;
+	}
+
+	&:hover {
+		background-color: #E8E8E8;
+
+		svg {
+			fill: #000000;
+		}
+	}
+}
+
+// Text meant only for screen readers.
+.screen-reader-text {
+	position: absolute;
+	clip-path: inset(50%);
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+	clip: rect(1px, 1px, 1px, 1px);
+
+	&:focus {
+		display: block;
+		top: 5px;
+		left: 5px;
+		z-index: 100000; 
+		clip-path: none;
+		background-color: #eee;
+		padding: 15px 23px 14px;
+		width: auto;
+		height: auto;
+		text-decoration: none;
+		line-height: normal;
+		color: #444;
+		font-size: 1em;
+		clip: auto !important;
+	}
 }

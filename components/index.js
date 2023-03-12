@@ -1,4 +1,5 @@
-import Navbar from './Navbar';
+import MenuBar from './MenuBar';
+import InfoBar from './InfoBar';
 import { TypingText, TitleText } from './CustomTexts';
 import ExploreCard from './ExploreCard';
 import StartSteps from './StartSteps';
@@ -7,7 +8,8 @@ import InsightCard from './InsightCard';
 import Footer from './Footer';
 
 export {
-  Navbar,
+  MenuBar,
+  InfoBar,
   TitleText,
   TypingText,
   StartSteps,

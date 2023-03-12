@@ -27,23 +27,23 @@ export const exploreWorlds = [
 ];
 
 export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+  'Die Röumlichkeiten des Rettungsankers stehen Dir zur Verfügung',
+  'Individuelle Planung nach Deinen Wünschen',
+  'Auf Wunsch Catering möglich',
 ];
 
 export const newFeatures = [
   {
-    imgUrl: '/vrpano.svg',
-    title: 'A new world',
+    imgUrl: '/footballIcon.svg',
+    title: 'SC Freiburg',
     subtitle:
-        'we have the latest update with new world for you to try never mind',
+        'Daten - Fakten - Punkte - Tore',
   },
   {
-    imgUrl: '/headset.svg',
-    title: 'More realistic',
+    imgUrl: '/LogoDfl.png',
+    title: 'Die Bundesliga',
     subtitle:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
+        'Echtzeit Tabelle der Bundesliga',
   },
 ];
 
