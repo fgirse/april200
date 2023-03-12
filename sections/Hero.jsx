@@ -6,7 +6,7 @@ import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} h-[100vh]  pl-6 bg-[url(/5555.svg)] bg-no-repeat bg-[length:99vw_99vh]`}>
+  <section className={`${styles.yPaddings} h-[100vh]  pl-6 lg:bg-[url(/5555.svg)] bg-no-repeat bg-[length:99vw_99vh]`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -20,7 +20,7 @@ const Hero = () => (
       <div className="flex justify-center items-center flex-col relative z-10 ">
         <motion.h1
           variants={textVariant(1.1)}
-          className="-mt[14vh] headingE text-yellow-50 text-[15rem] lg:mt-[2vh] lg:mb-[1vh]  lg:text-[19rem] 2xl:text-[23rem]"
+          className="-mt[14vh] headingE text-yellow-50 text-[10rem] lg:-mt-[5vh] lg:mb-[1vh]  lg:text-[19rem] 2xl:text-[23rem]"
         >
           die
         </motion.h1>
@@ -28,10 +28,10 @@ const Hero = () => (
           variants={textVariant(1.2)}
           className="mt[vh] flex flex-row justify-center items-center"
         >
-          <motion.h1 className="lg:-mt-[15vh] text-[3rem] lg:text-[9rem] text-red-700 headingF 2xl:text-[14rem]">
+          <motion.h1 className="headingA lg:-mt-[15vh] text-[4rem] lg:text-[11rem] text-red-700 2xl:headingF 2xl:text-[14rem]">
             kiez
           </motion.h1>
-          <motion.h1 className="lg:-mt-[15vh] text-[3rem] lg:text-[9rem] text-red-700 headingF 2xl:text-[14rem]">
+          <motion.h1 className="headingA lg:-mt-[15vh] text-[4rem] lg:text-[9rem] text-red-700 2xl:headingF 2xl:text-[14rem]">
             kneipe
           </motion.h1>
         </motion.div>
