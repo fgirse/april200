@@ -56,13 +56,13 @@ input:-webkit-autofill:focus {
 
 
 .headingA {
-  -webkit-text-stroke-width: 1.33px;
+  -webkit-text-stroke-width: 2.33px;
   -webkit-text-stroke-color: #ffffff;
   font-family: "Bowlby One SC";
 }
 
 .headingB {
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1.33px;
   -webkit-text-stroke-color: #ffcc00;
   font-family: "Architects Daughter";
 }
@@ -88,7 +88,7 @@ input:-webkit-autofill:focus {
 }
 
 .headingF {
-  -webkit-text-stroke-width: 2.9px;
+  -webkit-text-stroke-width: 3.66px;
   -webkit-text-stroke-color: #fffffc;
   font-family: "Bowlby One SC";
   font-weight: extrabold;

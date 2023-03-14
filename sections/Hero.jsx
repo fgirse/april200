@@ -6,7 +6,7 @@ import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} h-[100vh]  pl-6 lg:bg-[url(/5555.svg)] bg-no-repeat bg-[length:99vw_99vh]`}>
+  <section className={`${styles.yPaddings} h-[100vh] bg-[url(/5555.svg)] bg-no-repeat bg-cover bg-right pl- lg:bg-[url(/5555.svg)] lg:bg-no-repeat lg:bg-[length:99vw_99vh]`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -20,18 +20,18 @@ const Hero = () => (
       <div className="flex justify-center items-center flex-col relative z-10 ">
         <motion.h1
           variants={textVariant(1.1)}
-          className="-mt[14vh] headingE text-yellow-50 text-[10rem] lg:-mt-[5vh] lg:mb-[1vh]  lg:text-[19rem] 2xl:text-[23rem]"
+          className="headingE text-yellow-50 text-[10rem] lg:-mt-[5vh] lg:mb-[1vh]  lg:text-[19rem] 2xl:text-[23rem]"
         >
           die
         </motion.h1>
         <motion.div
-          variants={textVariant(1.2)}
+          variants={textVariant(1.2)}         
           className="mt[vh] flex flex-row justify-center items-center"
         >
-          <motion.h1 className="headingA lg:-mt-[15vh] text-[4rem] lg:text-[11rem] text-red-700 2xl:headingF 2xl:text-[14rem]">
+          <motion.h1 className="-mt-[12vh] headingA sm:text-[4rem] lg:-mt-[22vh] text-[2.9rem] lg:text-[11rem] text-red-700 2xl:headingF 2xl:text-[14rem]">
             kiez
           </motion.h1>
-          <motion.h1 className="headingA lg:-mt-[15vh] text-[4rem] lg:text-[9rem] text-red-700 2xl:headingF 2xl:text-[14rem]">
+          <motion.h1 className="-mt-[12vh] headingA lg:-mt-[22vh] text-[2.9rem] lg:text-[11rem] text-red-700 2xl:headingF 2xl:text-[14rem]">
             kneipe
           </motion.h1>
         </motion.div>
@@ -41,7 +41,7 @@ const Hero = () => (
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
-        <a href="#explore">
+        {/*<a href="#explore">
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
             <img
               src="/stamp.png"
@@ -49,7 +49,7 @@ const Hero = () => (
               className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
             />
           </div>
-        </a>
+</a>*/}
       </motion.div>
     </motion.div>
   </section>
