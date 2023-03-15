@@ -40,7 +40,7 @@ export const newFeatures = [
         'Daten - Fakten - Punkte - Tore',
   },
   {
-    imgUrl: '/LogoDfl.png',
+    imgUrl: '/LogoDFL.png',
     title: 'Die Bundesliga',
     subtitle:
         'Echtzeit Tabelle der Bundesliga',

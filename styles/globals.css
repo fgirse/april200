@@ -137,6 +137,17 @@ input:-webkit-autofill:focus {
   column-rule: thin inset orange;
 }
 
+#bgwohin {
+  background-image: linear-gradient(
+    180deg,
+    #ffcc00 0%,
+    #595959 53.65%,
+    #676767 100%), url(/Impress06);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
 .gradient-01 {
   background-image: linear-gradient(
     270deg,

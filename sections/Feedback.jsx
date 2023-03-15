@@ -6,7 +6,9 @@ import styles from '../styles';
 import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
 
 const Feedback = () => (
-  <section className={`${styles.paddings}`}>
+  <section id="gwohin" style={{backgroundImage:  "linear-gradient(180deg, rgba(25,34,46,1),rgba(0,0,0,0), rgba(24,34,46,1)), url('/Impress06.jpg')",
+
+}} className={`${styles.paddings} bg-[url("/Impress06.jpg")] bg-cover bg-no-repeat`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -39,11 +41,7 @@ const Feedback = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="relative flex-1 flex justify-center items-center"
       >
-        <img
-          src="/planet-09.png"
-          alt="planet-09"
-          className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
-        />
+    
 
         <motion.div
           variants={zoomIn(0.4, 1)}
