@@ -6,7 +6,7 @@ import styles from '../styles';
 import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
 
 const Feedback = () => (
-  <section id="gwohin" style={{backgroundImage:  "linear-gradient(180deg, rgba(25,34,46,1),rgba(0,0,0,0), rgba(24,34,46,1)), url('/Impress06.jpg')",
+  <section style={{backgroundImage:  "linear-gradient(180deg, rgba(25,34,46,1),rgba(0,0,0,0), rgba(24,34,46,1)), url('/Impress06.jpg')",
 
 }} className={`${styles.paddings} bg-[url("/Impress06.jpg")] bg-cover bg-no-repeat`}>
     <motion.div
@@ -20,20 +20,22 @@ const Feedback = () => (
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
       >
-        <div className="feedback-gradient" />
+        <div className="feedback-gradient bg-black/50" />
         <div>
           <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white">
-            Samantha
+            Lageplan
           </h4>
           <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
-            Founder Metaverus
+            Rettungsanker-Freiburg
           </p>
-        </div>
-
-        <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
-          “With the development of today's technology, metaverse is very
-          useful for today's work, or can be called web 3.0. by using
-          metaverse you can use it as anything”
+        </div> 
+        
+        <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.3px] leading-[39.6px] text-white">
+          Adelhauser-Strasse 7c <br />
+          79098 Freiburg/ Breisgau <br />
+          Telefon: 0761 xxxxxxx <br />
+          email: rettungsanker-freiburg@gmx.de <br />
+          www.rettungsanker-freiburg.de
         </p>
       </motion.div>
 
