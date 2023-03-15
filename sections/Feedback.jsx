@@ -6,9 +6,7 @@ import styles from '../styles';
 import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
 
 const Feedback = () => (
-  <section style={{backgroundImage:  "linear-gradient(180deg, rgba(25,34,46,1),rgba(0,0,0,0), rgba(24,34,46,1)), url('/Impress06.jpg')",
-
-}} className={`${styles.paddings} bg-[url("/Impress06.jpg")] bg-cover bg-no-repeat`}>
+  <section style={{backgroundImage: "linear-gradient(180deg, rgba(25,34,46,1),rgba(0,0,0,0), rgba(24,34,46,1)), url('/Impress08.svg'); background-Size: 100% 100%; background-Repeat: no-repeat;"}} className={`${styles.paddings}`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -20,7 +18,7 @@ const Feedback = () => (
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
       >
-        <div className="feedback-gradient bg-black/50" />
+        <div className="bg-red-800" />
         <div>
           <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white">
             Lageplan
