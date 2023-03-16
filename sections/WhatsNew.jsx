@@ -34,9 +34,9 @@ const WhatsNew = () => (
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
-          src="/Fusball.svg"
+          src="/Fussball.svg"
           alt="get-started"
-          className="w-[90%] h-[90%] object-contain"
+          className="w-[66%] h-[66%] object-contain"
         />
       </motion.div>
     </motion.div>

@@ -217,7 +217,7 @@ input:-webkit-autofill:focus {
 .gradient-05 {
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0.5) 0%,
     rgba(255, 255, 255, 0) 100%
   );
 }

@@ -5,7 +5,7 @@ import Event from './Event';
 import WhatsNew from './WhatsNew';
 import World from './World';
 import Insights from './Insights';
-import Feedback from './Feedback';
+import Wohin from './Wohin';
 
 export {
   Hero,
@@ -15,5 +15,5 @@ export {
   WhatsNew,
   World,
   Insights,
-  Feedback,
+  Wohin,
 };
