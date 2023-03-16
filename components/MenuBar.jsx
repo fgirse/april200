@@ -78,7 +78,7 @@ export default function Example() {
                   <div className="relative">
                     <div className="pointer-events-none absolute inset-y-0 left-0 pl-3 flex items-center">
                       <SearchIcon
-                        className="h-5 w-5 text-gray-400"
+                        className="h-5 w-5 text-gray-50"
                         aria-hidden="true"
                       />
                     </div>
@@ -189,7 +189,7 @@ export default function Example() {
                     item.current
                       ? 'bg-gray-900 text-white'
                       : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md py-2 px-3 text-[1rem] font-black',
+                    'block rounded-md py-2 px-3 text-[2rem] font-black',
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >

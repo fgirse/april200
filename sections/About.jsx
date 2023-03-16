@@ -24,7 +24,7 @@ const About = () => (
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-gray-500"
       >
-        <h1 className="text-3rem lg:text-[5rem] font-extrabold text-yellow-500 text-center">&quot;Moin Moin&quot;</h1>
+        <h1 className="text-[3rem] lg:text-[5rem] font-extrabold text-yellow-500 text-center">&quot;Moin Moin&quot;</h1>
         <div className='lg:w-1/6 lg:h-1/6'><Image
           src="/lighthouse3.png"
           height="320"
