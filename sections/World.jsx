@@ -29,7 +29,8 @@ const World = () => (
         variants={fadeIn('up', 'tween', 0.3, 1)}
         className="relative mt-[68px] flex w-full h-[550px]"
       >
-        <img src="/Hero.png" alt="map" className="border-8 border-gray-700 rounded-2xl w-full h-full object-cover" />
+        <img src="/Hero.png" alt="map" className="hidden border-8  rounded-2xl w-full h-full object-cover lg:block" />
+        <img src="/Collage02.png" alt="map" className="border-8 border-gray-700 rounded-2xl w-full h-full object-cover lg:hiccccccddccccccccccccccccccccccccc" />
 
         
       </motion.div>
