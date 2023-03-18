@@ -26,14 +26,14 @@ const Insights = () => (
       </div>
     </motion.div>
   </section><section className=" mx-auto w-full rounded-2xl bg-slate-900 py-2 md:mx-auto md:w-full lg:py-20">
-      <div className="mb-2 w-36 h-36 lg:-mt-2 lg:w-3/12 lg:p-8 ">
+      <div className="mb-2 w-36 h-36 lg:-mt-2 lg:w-3/12 lg:p-8 lg:transform translate-x- ">
         <Image
           src="/Albers-white.png"
           alt="Impressionen"
           height="208"
           width="195" />
       </div>
-      <h1 className="headingA mb-[3vh] text-center text-[2.3rem] text-yellow-600 lg:-mt-20 lg:text-[4.66rem] lg:text-yellow-500">
+      <h1 className="headingA mb-[3vh] text-center text-[2.3rem] text-yellow-600 lg:-mt-20 lg:text-[5.66rem] lg:text-yellow-500">
         impressionen aus dem Rettungsanker
       </h1>
 

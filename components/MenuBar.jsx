@@ -27,17 +27,17 @@ const user = {
 }
 const navigation = [
   {
-    imgage: 'img src="../public/Bulleye.svg"',
+  
     name: 'Home',
-    href: '/#moinmoin',
+    href: '/',
     current: true,
   },
-  { name: 'Geschichte', href: '#', current: false },
+  { name: 'Über uns', href: '#section-about', current: false },
   { name: 'Team', href: '#', current: false },
   { name: 'Drinks', href: '#', current: false },
-  { name: 'Sportarena', href: '#', current: false },
-  { name: 'Events', href: '/Event', current: false },
-  { name: 'Wohin ?', href: '/#wohin', current: false },
+  { name: 'Sportarena', href: '#section-sportarena', current: false },
+  { name: 'Events', href: '#section-events', current: false },
+  { name: 'Wohin ?', href: '#section-wohin', current: false },
   { name: 'Impressum', href: '/Impressum', current: false },
 ]
 
@@ -55,7 +55,7 @@ export default function Example() {
   return (
     <Disclosure
       as="header"
-      className="w-full bg-[url('/Wood4.svg')] bg-cover bg-no-repeat"
+      className="fixed z-20 w-full h-[] lg:bg-[url('/Wood4.svg')] lg:bg-cover lg:bg-no-repeat"
     >
       {({ open }) => (
         <>
@@ -85,7 +85,7 @@ export default function Example() {
                     <input
                       id="search"
                       name="search"
-                      className="block w-full bg-yellow-600 border border-transparent rounded-md py-2 pl-10 pr-3 text-sm placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-blue-500-900 focus:placeholder-gray-500 sm:text-sm"
+                      className="block w-full bg-yellow-600 border border-transparent rounded-md py-2 pl-10 pr-3 text-sm placeholder-gray-200 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-blue-500-900 focus:placeholder-gray-500 sm:text-sm"
                       placeholder="Search"
                       type="search"
                     />
@@ -137,7 +137,7 @@ export default function Example() {
                       {userNavigation.map((item) => (
                         <Menu.Item key={item.name}>
                           {({ active }) => (
-                            <a
+                            <Link
                               href={item.href}
                               className={classNames(
                                 active ? 'bg-gray-100' : '',
@@ -146,7 +146,7 @@ export default function Example() {
                             >
                               <Image src="/Bulleye.svg" width="50" height="50" alt="Bulleye"/>
                               {item.name}
-                            </a>
+                            </Link>
                           )}
                         </Menu.Item>
                       ))}
@@ -187,13 +187,16 @@ export default function Example() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? 'bg-gray-900 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      ? 'bg-red-700/60 text-white'
+                      : 'border border-gray-300 py-3 text-gray-300 hover:bg-gray-700 hover:text-yellow-400',
                     'block rounded-md py-2 px-3 text-[2rem] font-black',
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
-                  {item.name}
+                  <div className='w-full flex flex-row justify-start gap-x-3 items-end'>
+                     <Image className='ml-3' src="/Bulleye.svg" width="40" height="40" alt="Bulleye"/>
+                  {  item.name}
+                  </div>
                 </Disclosure.Button>
               ))}
             </div>
@@ -230,6 +233,7 @@ export default function Example() {
                     href={item.href}
                     className="block rounded-md py-2 px-3 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
                   >
+                       <Image src="/Bulleye.svg" width="40" height="40" alt="Bulleye"/>
                     {item.name}
                   </Disclosure.Button>
                 ))}

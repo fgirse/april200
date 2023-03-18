@@ -9,7 +9,7 @@ import { fadeIn, staggerContainer } from '../utils/motion';
 import { TypingText } from "../components";
 
 const About = () => (
-  <section className={`${styles.paddings} relative z-10`} name="hashid">
+  <section id="section-about" className={`${styles.paddings} relative z-10`} name="hashid">
     <div className="gradient-02 z-0"></div>
     <motion.div
       variants={staggerContainer}
@@ -18,13 +18,13 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText id="moinmoin" title="| Moin Moin" textStyles="text-center" />
+      <TypingText id="moinmoin" title="| über Uns" textStyles="text-center" />
 
       <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-gray-500"
       >
-        <h1 className="text-[3rem] lg:text-[5rem] font-extrabold text-yellow-500 text-center">&quot;Moin Moin&quot;</h1>
+        <h1 className="text-[4rem] lg:text-[5rem] font-extrabold text-yellow-500 text-center">&quot;Moin Moin&quot;</h1>
         <div className='lg:w-1/6 lg:h-1/6'><Image
           src="/lighthouse3.png"
           height="320"
