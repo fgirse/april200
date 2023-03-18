@@ -55,7 +55,7 @@ export default function Example() {
   return (
     <Disclosure
       as="header"
-      className="fixed z-20 w-full h-[] lg:bg-[url('/Wood4.svg')] lg:bg-cover lg:bg-no-repeat"
+      className="sticky top-0 left-0 z-20 w-full h-[] lg:bg-[url('/Wood4.svg')] lg:bg-cover lg:bg-no-repeat"
     >
       {({ open }) => (
         <>
@@ -160,7 +160,7 @@ export default function Example() {
               aria-label="Global"
             >
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}  
                   className={classNames(
@@ -173,7 +173,7 @@ export default function Example() {
                 >
                   <Image src="/Bulleye.svg" width="40" height="40" alt="Bulleye"/>
                   {item.name}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>

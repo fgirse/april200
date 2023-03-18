@@ -1,4 +1,4 @@
-import { Footer, InfoBar ,MenuBar } from '../components';
+import { Footer, InfoBar ,MenuBar, Team } from '../components';
 import { About, Philosophy, Wohin, Event, Hero, Insights, WhatsNew, World } from '../sections';
 
 const Page = () => (
@@ -20,6 +20,7 @@ const Page = () => (
     <div className="relative">
       <Insights />
       <div className="gradient-04 z-0" />
+      <Team />
       <Wohin />
     </div>
     <Footer />

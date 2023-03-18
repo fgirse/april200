@@ -48,7 +48,7 @@ const Footer = () => (
           />
           <p className="font-normal text-[14px] text-white opacity-50">
             Copyright © {new Date().getFullYear()}{" "}
-            <span className="headingA font-black text-gray-900">
+            <span className="headingG font-black text-gray-900">
               medicus design basel switzerland
             </span>
             &nbsp;&&nbsp;

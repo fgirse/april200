@@ -60,6 +60,11 @@ input:-webkit-autofill:focus {
   -webkit-text-stroke-color: #ffffff;
   font-family: "Bowlby One SC";
 }
+.headingG {
+  -webkit-text-stroke-width: 0.33px;
+  -webkit-text-stroke-color: #ffffff;
+  font-family: "Bowlby One SC";
+}
 
 .headingB {
   -webkit-text-stroke-width: 1.33px;

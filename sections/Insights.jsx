@@ -26,7 +26,6 @@ const Insights = () => (
       </div>
     </motion.div>
   </section>
-  <Team/>
   
   <section className=" mx-auto w-full rounded-2xl linear-gradient(rgb(55, 65, 81), rgba(17, 24, 39,.6), rgba(0, 0, 0,0)) py-2 md:mx-auto md:w-full lg:py-20">
       <div className="mb-2 w-36 h-36 lg:-mt-2 lg:w-3/12 lg:p-8 lg:transform translate-x- ">

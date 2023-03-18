@@ -20,7 +20,7 @@ const Hero = () => (
       <div className="flex justify-center items-center flex-col relative z-10 ">
         <motion.h1
           variants={textVariant(1.1)}
-          className="headingE text-yellow-50 text-[10rem] lg:-mt-[5vh] lg:mb-[1vh]  lg:text-[19rem] 2xl:text-[23rem]"
+          className="mb-[3vh] headingE text-yellow-50 text-[10rem] lg:-mt-[5vh] lg:mb-[1vh]  lg:text-[19rem] 2xl:text-[23rem]"
         >
           die
         </motion.h1>
