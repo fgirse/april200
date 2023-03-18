@@ -1,15 +1,15 @@
 import { Footer, InfoBar ,MenuBar } from '../components';
-import { About, Explore, Wohin, Event, Hero, Insights, WhatsNew, World } from '../sections';
+import { About, Philosophy, Wohin, Event, Hero, Insights, WhatsNew, World } from '../sections';
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
-    <MenuBar />
+    <MenuBar className="mt-8" />
     <InfoBar/>
     <Hero />
     <div className="relative">
       <About />
       <div className="gradient-03 z-0" />
-      <Explore />
+      <Philosophy />
     </div>
     <div className="relative">
       <Event />

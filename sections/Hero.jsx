@@ -6,7 +6,7 @@ import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} h-[100vh] bg-[url(/5555.svg)] bg-no-repeat bg-cover bg-right pl- lg:bg-[url(/5555.svg)] lg:bg-no-repeat lg:bg-[length:99vw_99vh]`}>
+  <section className={`${styles.yPaddings} mt-6 h-[100vh] bg-[url(/5555.svg)] bg-no-repeat bg-cover bg-right pl- lg:bg-[url(/5555.svg)] lg:bg-no-repeat lg:bg-[length:99vw_99vh]`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"

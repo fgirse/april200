@@ -42,6 +42,7 @@ export const newFeatures = [
   {
     imgUrl: '/LogoDFL.png',
     title: 'Die Bundesliga',
+
     subtitle:
         'Echtzeit Tabelle der Bundesliga',
   },
@@ -49,19 +50,19 @@ export const newFeatures = [
 
 export const insights = [
   {
-    imgUrl: '/planet-06.png',
-    title: 'The launch of the Metaverse makes Elon musk ketar-ketir',
+    imgUrl: '/astraglas.png',
+    title: 'Biere - Biermixgetränke -  Softdrinks',
     subtitle:
-        'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
+        '',
   },
   {
-    imgUrl: '/planet-07.png',
-    title: '7 tips to easily master the madness of the Metaverse',
+    imgUrl: '/weinbottle.png',
+    title: 'hochqualitative Weine aus der Region Kaiserstuhl und Markgräflerland',
     subtitle:
         'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
   },
   {
-    imgUrl: '/planet-08.png',
+    imgUrl: '/cocktail.png',
     title: 'With one platform you can explore the whole world virtually',
     subtitle:
         'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',

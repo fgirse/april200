@@ -1,6 +1,6 @@
 import Hero from './Hero';
 import About from './About';
-import Explore from './Explore';
+import Philosophy from './Philosophy';
 import Event from './Event';
 import WhatsNew from './WhatsNew';
 import World from './World';
@@ -10,7 +10,7 @@ import Wohin from './Wohin';
 export {
   Hero,
   About,
-  Explore,
+  Philosophy,
   Event,
   WhatsNew,
   World,
