@@ -6,7 +6,7 @@ import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} mt-6 h-[100vh] bg-[url(/5555.svg)] bg-no-repeat bg-cover bg-right pl- lg:bg-[url(/5555.svg)] lg:bg-no-repeat lg:bg-[length:99vw_99vh]`}>
+  <section className={`${styles.yPaddings}  relative top-[20vh] h-[100vh] bg-[url(/5555.svg)] bg-no-repeat bg:cover bg-right pl- lg:h-screen lg:bg-no-repeat lg:bg-right bg-hero`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -14,7 +14,7 @@ const Hero = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-   <div className='mt-[5vh] mx-auto bg-gray-900/40 w-9/12 h-full flex flex-col items-center'>
+   <div className='mx-auto bg-gray-900/40 w-9/12 h-full flex flex-col items-center'>
       <Image src="/LogoNeu.png" width="400" height="260"  alt="LogoNeu" className="lg:hidden "/>
       
       <div className="flex justify-center items-center flex-col relative z-10 ">

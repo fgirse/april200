@@ -29,7 +29,7 @@ const people = [
   {
     name: 'Kalim',
     role: 'Maat',
-    imageUrl: '/Astraballons.png',
+    imageUrl: '/ancerIcon.svg',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -37,7 +37,7 @@ const people = [
   {
     name: 'Theo',
     role: 'Smutje',
-    imageUrl: '/Astraballons.png',
+    imageUrl: '/ancerIcon.svg',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -45,7 +45,7 @@ const people = [
   {
     name: 'James',
     role: 'Funker',
-    imageUrl: '/Astraballons.png',
+    imageUrl: '/ancerIcon.svg',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -54,7 +54,7 @@ const people = [
 
 export default function Example() {
   return (
-    <div className="bg-slate-900 lg:bg-[url('/ocean.jpeg')] lg:bg-[length:100vw_15vh] lg:bg-center lg:bg-no-repeat">
+    <div className="bg-gradient-to-b from-[#1A232E] to-[#1A232E] lg:bg-[url('/ocean.jpeg')] lg:bg-[length:100vw_15vh] lg:bg-center lg:bg-no-repeat">
       <div className="py- mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8 lg:py-20">
         <div className="space-y-5 sm:space-y-1">
           <div className="space-y-3 sm:mx-auto sm:max-w-xl lg:max-w-5xl">
@@ -92,7 +92,7 @@ export default function Example() {
                   alt=""
                 />
                 <div className="space-y-2">
-                  <div className="space-y-1 rounded-2xl p-1 text-3xl font-black leading-6 lg:lg:bg-black/40">
+                  <div className="space-y-1 rounded-2xl p-1 text-3xl text-blue-100 font-black leading-6 lg:lg:bg-black/10">
                     <h3>{person.name}</h3>
                     <p className="text-yellow-600">{person.role}</p>
                   </div>

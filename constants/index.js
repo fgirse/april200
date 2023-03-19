@@ -62,8 +62,8 @@ export const insights = [
         'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
   },
   {
-    imgUrl: '/cocktail.png',
-    title: 'With one platform you can explore the whole world virtually',
+    imgUrl: '/Cocktail06.png',
+    title: 'Internationale Cocktails - zahlreiche Kurze',
     subtitle:
         'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
   },

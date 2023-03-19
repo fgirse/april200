@@ -55,11 +55,11 @@ export default function Example() {
   return (
     <Disclosure
       as="header"
-      className="sticky top-0 left-0 z-20 w-full h-[] lg:bg-[url('/Wood4.svg')] lg:bg-cover lg:bg-no-repeat"
+      className="fixed top-0 left-0 z-[20] w-full  bg-[url('/Wood4.svg')] bg-content lg:bg-cover lg:bg-no-repeat"
     >
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:divide-y lg:divide-yellow-50 lg:px-8">
+          <div className="relative top-[0vh] max-w-7xl mx-auto px-2 sm:px-4 lg:divide-y lg:divide-yellow-50 lg:px-8">
             <div className="relative h-16 flex justify-between">
               <div className="relative z-10 px-2 flex lg:px-0">
                 <div className="flex-shrink-0 flex items-center">
@@ -166,8 +166,8 @@ export default function Example() {
                   className={classNames(
                     item.current
                       ? 'bg-gray-900/30 uppercase text-white font-extrabold'
-                      : 'uppercase text-gray-300 hover:bg-yellow-600 hover:text-white font-extrabold',
-                    'rounded-md py-2 px-3 inline-flex items-center text-[1rem] font-medium',
+                      : 'uppercase bg-gray-900/20 text-gray-300 hover:bg-yellow-600 hover:text-white font-extrabold',
+                    'rounded-md py-2 px-2 inline-flex items-center text-[1.0rem] font-medium',
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >

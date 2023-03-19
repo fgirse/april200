@@ -5,7 +5,7 @@ import React from 'react';
 export default function InfoBar() {
   return (
     <>
-      <div className="mx-auto flex h-[4vh] w-[100vw] flex-row items-center justify-start gap-x-6 bg-gray-600">
+      <div className="z-[30] top-4vh fixed lg:fixed top-[13vh] mx-auto flex h-[4vh] w-[100vw] flex-row items-center justify-start gap-x-6 bg-gray-600">
         <div className=" flex flex-row gap-x-2 px-2 lg:flex-row lg:items-center lg:justify-evenly">
           <svg
             className="h-5 w-5"
