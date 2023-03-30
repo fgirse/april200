@@ -15,12 +15,12 @@ const Hero = () => (
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
    <div className='mx-auto bg-gray-900/40 w-9/12 h-full flex flex-col items-center'>
-      <Image src="/LogoNeu.png" width="400" height="260"  alt="LogoNeu" className="lg:hidden "/>
+      <Image src="/LogoNeu.png" width="400" height="260"  alt="LogoNeu" className="md:hidden "/>
       
       <div className="flex justify-center items-center flex-col relative z-10 ">
         <motion.h1
           variants={textVariant(1.1)}
-          className="mb-[3vh] headingE text-yellow-50 text-[10rem] lg:-mt-[5vh] lg:mb-[1vh]  lg:text-[19rem] 2xl:text-[23rem]"
+          className="mb-[3vh] headingE text-yellow-50 text-[10rem] md:[17vw] lg:-mt-[5vh] lg:mb-[1vh]  lg:text-[19rem] 2xl:text-[23rem]"
         >
           die
         </motion.h1>
@@ -28,10 +28,10 @@ const Hero = () => (
           variants={textVariant(1.2)}         
           className="mt[vh] flex flex-row justify-center items-center"
         >
-          <motion.h1 className="-mt-[12vh] headingA sm:text-[4rem] lg:-mt-[22vh] text-[2.9rem] lg:text-[11rem] text-red-700 2xl:headingF 2xl:text-[14rem]">
+          <motion.h1 className="-mt-[12vh] headingA lg:-mt-[22vh] text-[2.9rem] md:text-[7rem] lg:text-[11rem] text-red-700 2xl:headingF 2xl:text-[14rem]">
             kiez
           </motion.h1>
-          <motion.h1 className="-mt-[12vh] headingA lg:-mt-[22vh] text-[2.9rem] lg:text-[11rem] text-red-700 2xl:headingF 2xl:text-[14rem]">
+          <motion.h1 className="-mt-[12vh] headingA lg:-mt-[22vh] text-[2.9rem] md:text-[7rem] lg:text-[11rem] text-red-700 2xl:headingF 2xl:text-[14rem]">
             kneipe
           </motion.h1>
         </motion.div>

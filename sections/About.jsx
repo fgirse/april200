@@ -24,16 +24,17 @@ const About = () => (
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-gray-500"
       >
-        <h1 className="text-[3rem] lg:text-[5rem] font-extrabold text-yellow-500 text-center">&quot;Moin Moin&quot;</h1>
-        <div className='lg:w-1/6 lg:h-1/6'><Image
+        <h1 className="text-[2.5rem] lg:text-[4rem] font-extrabold text-yellow-500 text-center">&quot;Moin Moin&quot;</h1>
+        <div className='md: w-[20vw] md: lg:h[20vh]  '>
+          <Image
           src="/lighthouse3.png"
           height="320"
           width="230"
           alt="Leuchtturm"
-          className="shape-lighthouse lg:w-15vw lg:h-15vh"
-        /></div>
+          className="shape-lighthouse w- lg:w-[15vw] lg:h-[15vh]"
+        /></div>              
         
-        <p className = "text-gray-300"> In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im
+        <p className = "text-gray-300 md:text-[1.33rem] lg:text-[1.66rem]"> In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im
         Herzen von Freiburg ein Lokal eröffnet, welches es so südlich der Elbe
         wohl kein zweites Mal gibt. Ausgebaut im Stile eines Schiffrumpfes, ist
         der im Zentrum der Altstadt gelegene Rettungsanker-Freiburg idealer
@@ -41,7 +42,10 @@ const About = () => (
         kennenzulernen. Wir sind stolz auf unser buntes, internationales
         Publikum. <br /> Unser Rettungsanker ist auch ideale Location zur
         Durchführung Ihres privaten oder geschäftlichen Events &nbsp;Sprechen
-        Sie uns an oder kontaktieren Sie uns vor Ort oder schreiben Sie uns eine
+        Sie uns an oder kontaktieren Sie uns vor Ort oder schreiben Sie uns
+
+
+      
         email. Wir freuen uns Sie im Rettungsanker begrüsssen zu dürfen.</p> 
         
         <div className="flex flex-row justify-center items-center gap-x-5">
@@ -68,8 +72,7 @@ const About = () => (
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
-              <a className="ui btn" href="mailto:rettungsanker-freiburg@gmx.de?">SOS email</a>
-            </button>
+              <a className="ui btn" href="mailto:rettungsanker-freiburg@gmx.de?">SOS email</a> </button>
           </Tooltip>
         </div>
         <p className="text-yellow-500 text-center">scrolling down</p>
