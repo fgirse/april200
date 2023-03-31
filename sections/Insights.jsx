@@ -35,7 +35,7 @@ const Insights = () => (
           height="208"
           width="195" />
       </div>
-      <h1 className="headingA mb-[3vh] text-center text-[2.3rem] text-yellow-600 lg:-mt-20 lg:text-[5.66rem] lg:text-yellow-500">
+      <h1 className="mb-[3vh] text-center text-[2.3rem] text-yellow-600 lg:-mt-20 md:text-[3.66rem] lg:text-[5.66rem] lg:text-yellow-500">
         impressionen aus dem Rettungsanker
       </h1>
 

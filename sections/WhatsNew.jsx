@@ -36,7 +36,7 @@ const WhatsNew = () => (
         <img
           src="/Fussball.svg"
           alt="get-started"
-          className="w-[66%] h-[66%] object-contain"
+          className="md:w-60 md:h-60 w-[66%] h-[66%] object-contain"
         />
       </motion.div>
     </motion.div>

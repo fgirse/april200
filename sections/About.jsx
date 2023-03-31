@@ -18,7 +18,7 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText id="moinmoin" title="| über Uns" textStyles="text-center" />
+      <TypingText  title="| über Uns" textStyles="text-center mt-[12vh] lg:mt-[0vh]" />
 
       <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
@@ -57,7 +57,7 @@ const About = () => (
           alt="Portrait"
           className=" mt-5 rounded-full portraitMick"
         />
-        <p className='text-gray-300'> Michael Schreck und das Team des Rettungsankers</p>
+        <p className = "text-gray-300 md:text-[1.33rem] lg:text-[1.66rem]"> Michael Schreck und das Team des Rettungsankers</p>
         </div>
       </motion.div>
       <div className="flex flex-col items-center justify-center">

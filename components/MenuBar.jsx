@@ -55,7 +55,7 @@ export default function Example() {
   return (
     <Disclosure
       as="header"
-      className="fixed top-0 left-0 z-[20] w-full  bg-[url('/Wood4.svg')] bg-content lg:bg-cover lg:bg-no-repeat"
+      className="bg-slate-800 fixed top-0 left-0 z-[20] w-full  lg:bg-[url('/Wood4.svg')] bg-content lg:bg-cover lg:bg-no-repeat"
     >
       {({ open }) => (
         <>
@@ -144,7 +144,7 @@ export default function Example() {
                                 'block py-2 px-4 text-sm text-gray-700',
                               )}
                             >
-                              <Image src="/Bulleye.svg" width="50" height="50" alt="Bulleye"/>
+                             
                               {item.name}
                             </Link>
                           )}
@@ -171,7 +171,7 @@ export default function Example() {
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
-                  <Image src="/Bulleye.svg" width="40" height="40" alt="Bulleye"/>
+                  <Image src="/Bulleye.svg" width="40" height="40" alt="Bulleye" className="hover:transform scale-150"/>
                   {item.name}
                 </Link>
               ))}
@@ -179,7 +179,7 @@ export default function Example() {
           </div>
 
           <Disclosure.Panel as="nav" className="lg:hidden" aria-label="Global">
-            <div className="pt-2 pb-3 px-2 space-y-1">
+            <div className="mt-[6vh] pt-2 pb-3 px-2 space-y-2">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -187,14 +187,14 @@ export default function Example() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? 'bg-red-700/60 text-white'
+                      ? 'bg-red-700/60 text-white border border-gray-300 hover:bg-red-600'
                       : 'border border-gray-300 py-3 text-gray-300 hover:bg-gray-700 hover:text-yellow-400',
                     'block rounded-md py-2 px-3 text-[2rem] font-black',
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
                   <div className='w-full flex flex-row justify-start gap-x-3 items-end'>
-                     <Image className='ml-3' src="/Bulleye.svg" width="40" height="40" alt="Bulleye"/>
+                     <Image className='ml-3' src="/Bulleye.svg" width="40" height="40" alt="Bulleye" className="hover:transform scale-110"/>
                   {  item.name}
                   </div>
                 </Disclosure.Button>
