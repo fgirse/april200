@@ -27,9 +27,11 @@ export const exploreWorlds = [
 ];
 
 export const startingFeatures = [
-  'Die Röumlichkeiten des Rettungsankers stehen Dir zur Verfügung',
+  'Die Räumlichkeiten des Rettungsankers stehen Dir zur Verfügung',
   'Individuelle Planung nach Deinen Wünschen',
   'Auf Wunsch Catering möglich',
+  'Weitere Info click Button'
+  
 ];
 
 export const newFeatures = [
@@ -50,22 +52,22 @@ export const newFeatures = [
 
 export const insights = [
   {
-    imgUrl: '/astraglas.png',
+    imgUrl: '/beer1.png',
     title: 'Biere - Biermixgetränke -  Softdrinks',
+    subtitle:
+        'Frisches Flensburger vom Fass',
+  },
+  {
+    imgUrl: '/winebottle_cart.png',
+    title: 'Qualitativ hochwertige Weine aus der Region Kaiserstuhl und Markgräflerland',
     subtitle:
         '',
   },
   {
-    imgUrl: '/weinbottle.png',
-    title: 'hochqualitative Weine aus der Region Kaiserstuhl und Markgräflerland',
-    subtitle:
-        'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
-  },
-  {
-    imgUrl: '/Cocktail06.png',
+    imgUrl: '/cocktailIcon.svg',
     title: 'Internationale Cocktails - zahlreiche Kurze',
     subtitle:
-        'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+        '',
   },
 ];
 
