@@ -31,7 +31,8 @@ const GetStarted = () => (
         className="flex-[0.75] text-yellow-400 flex justify-center flex-col"
       >
         <TypingText title="|Dein Event" />
-        <TitleText  title={<>Dein Event?</>} />
+        <TitleText  title={<>Dein Event!</>} />
+        <h1 className="text-[2rem]">privater oder geschäftlicher Event?</h1>
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           {startingFeatures.map((feature, index) => (
             <StartSteps

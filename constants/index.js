@@ -55,7 +55,7 @@ export const insights = [
     imgUrl: '/beer1.png',
     title: 'Biere - Biermixgetränke -  Softdrinks',
     subtitle:
-        'Frisches Flensburger vom Fass',
+        'Frisches Flensburger vom Fass und Astra das Kultbier direkt vom Kiez',
   },
   {
     imgUrl: '/winebottle_cart.png',
@@ -64,7 +64,7 @@ export const insights = [
         '',
   },
   {
-    imgUrl: '/cocktailIcon.svg',
+    imgUrl: '/cocktail02.png',
     title: 'Internationale Cocktails - zahlreiche Kurze',
     subtitle:
         '',

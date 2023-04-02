@@ -35,8 +35,8 @@ const Insights = () => (
           height="208"
           width="195" />
       </div>
-      <h1 className="mb-[3vh] text-center text-[2.3rem] text-yellow-600 lg:-mt-20 md:text-[3.66rem] lg:text-[5.66rem] lg:text-yellow-500">
-        impressionen aus dem Rettungsanker
+      <h1 className="mb-[3vh] text-center text-[2.3rem] text-yellow-600 lg:-mt-20 md:text-[2.66rem] lg:text-[5.66rem] lg:text-yellow-500">
+        Impressionen aus dem Rettungsanker
       </h1>
 
       <div className="mx-auto h-96 w-80 lg:mt-[5vh] lg:h-full lg:w-1/4 lg:border-4 lg:border-slate-100">

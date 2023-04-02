@@ -189,12 +189,12 @@ export default function Example() {
                     item.current
                       ? 'bg-red-700/60 text-white border border-gray-300 hover:bg-red-600'
                       : 'border border-gray-300 py-3 text-gray-300 hover:bg-gray-700 hover:text-yellow-400',
-                    'block rounded-md py-2 px-3 text-[2rem] font-black',
+                    'block rounded-md py-2 px-3 text-[1.66rem] font-black md:text-[2.0rem]',
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
                   <div className='w-full flex flex-row justify-start gap-x-3 items-end'>
-                     <Image className='ml-3' src="/Bulleye.svg" width="40" height="40" alt="Bulleye" className="hover:transform scale-110"/>
+                     <Image  src="/Bulleye.svg" width="40" height="40" alt="Bulleye" className="hover:transform scale-110"/>
                   {  item.name}
                   </div>
                 </Disclosure.Button>
