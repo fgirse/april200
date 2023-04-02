@@ -58,7 +58,7 @@ export const insights = [
         'Frisches Flensburger vom Fass und Astra das Kultbier direkt vom Kiez',
   },
   {
-    imgUrl: '/winebottle_cart.png',
+    imgUrl: "bottlewineaquarell.png",
     title: 'Qualitativ hochwertige Weine aus der Region Kaiserstuhl und Markgräflerland',
     subtitle:
         '',
