@@ -6,7 +6,7 @@ import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = () => (
-  <section id="section-hero" className={`${styles.yPaddings} relative top-[12vh] h-[100vh] bg-no-repeat bg:cover pl- lg:h-screen lg:bg-no-repeat lg:bg-right bg-hero`}>
+  <section className={`${styles.yPaddings} relative top-[12vh] h-[100vh] bg-no-repeat pl- lg:h-screen lg:bg-no-repeat lg:bg-right bg-hero_sm lg:bg-hero_lg`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -14,13 +14,13 @@ const Hero = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-   <div className='mt-12 mx-auto bg-gray-900/40 w-9/12 h-full flex flex-col items-center'>
-      <Image src="/LogoNeu.png" width="200" height="260"  alt="LogoNeu" className="lg:hidden "/>
+   <div className='mt-12 mx-auto bg-gray-900/30 w-11/12 h-full flex flex-col items-center'>
+      <Image src="/LogoNeu.png" width="160" height="260"  alt="LogoNeu" className="lg:hidden "/>
       
       <div className="flex justify-center items-center flex-col relative z-10 ">
         <motion.h1
           variants={textVariant(1.1)}
-          className="mb-[3vh] headingE text-yellow-50 text-[9rem] md:[17vw] lg:-mt-[5vh] lg:mb-[1vh]  lg:text-[19rem] 2xl:text-[23rem]"
+          className="mt-[24vh] mb-[3vh] headingE text-yellow-50 text-[9.66rem] md:[45vw] lg:-mt-[5vh] lg:mb-[1vh]  lg:text-[19rem] 2xl:text-[23rem]"
         >
           die
         </motion.h1>

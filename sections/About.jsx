@@ -18,7 +18,7 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText  title="| über Uns" textStyles="text-center mt-[12vh] lg:mt-[0vh]" />
+      <TypingText  title="| about us" textStyles="text-center mt-[7vh] lg:mt-[0vh]" />
 
       <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
@@ -34,7 +34,7 @@ const About = () => (
           className="shape-lighthouse w- lg:w-[15vw] lg:h-[15vh]"
         /></div>              
         
-        <p className = "text-gray-300 md:text-[1.33rem] lg:text-[1.66rem]"> In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im
+        <p className = "text-[1,0rem] text-gray-300 md:text-[1.33rem] lg:text-[1.66rem]"> In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im
         Herzen von Freiburg ein Lokal eröffnet, welches es so südlich der Elbe
         wohl kein zweites Mal gibt. Ausgebaut im Stile eines Schiffrumpfes, ist
         der im Zentrum der Altstadt gelegene Rettungsanker-Freiburg idealer

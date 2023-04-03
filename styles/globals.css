@@ -126,7 +126,7 @@ input:-webkit-autofill:focus {
   width: 100%;
 }
 
-#section-hero{
+.bg-hero_sm{
   background-image: linear-gradient(
     to bottom,
     rgba(25, 36, 45, 1),
@@ -169,7 +169,7 @@ input:-webkit-autofill:focus {
   top: 0px;
   right: 0px;
 
-  background: #7aebfb;
+  background: #16212A;
   filter: blur(190px);
 }
 
