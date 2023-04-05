@@ -114,7 +114,7 @@ input:-webkit-autofill:focus {
 
 
 
-#wohin-section{
+.bg-wohin {
   background-image: linear-gradient(
     to bottom,
     rgba(25, 36, 45, 1),

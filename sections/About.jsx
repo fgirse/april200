@@ -34,7 +34,7 @@ const About = () => (
           className="shape-lighthouse w- lg:w-[15vw] lg:h-[15vh]"
         /></div>              
         
-        <p className = "text-[1,0rem] text-gray-300 md:text-[1.33rem] lg:text-[1.66rem]"> In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im
+        <p className = "text-[1.0rem] text-gray-300 md:text-[1.33rem] lg:text-[1.66rem]"> In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im
         Herzen von Freiburg ein Lokal eröffnet, welches es so südlich der Elbe
         wohl kein zweites Mal gibt. Ausgebaut im Stile eines Schiffrumpfes, ist
         der im Zentrum der Altstadt gelegene Rettungsanker-Freiburg idealer
@@ -57,7 +57,7 @@ const About = () => (
           alt="Portrait"
           className=" mt-5 rounded-full portraitMick"
         />
-        <p className = "text-gray-300 md:text-[1.33rem] lg:text-[1.66rem]"> Michael Schreck und das Team des Rettungsankers</p>
+        <p className = "text-gray-300 text-[1.0rem] md:text-[1.33rem] lg:text-[1.66rem]"> Michael Schreck und das Team des Rettungsankers</p>
         </div>
       </motion.div>
       <div className="flex flex-col items-center justify-center">

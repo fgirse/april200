@@ -52,23 +52,11 @@ export const newFeatures = [
 
 export const insights = [
   {
-    imgUrl: '/beer1.png',
-    title: 'Biere - Biermixgetränke -  Softdrinks',
-    subtitle:
-        'Frisches Flensburger vom Fass und Astra das Kultbier direkt vom Kiez',
+    imgUrl: '/bottles03.png',
+    title: 'Getränkekarte Rettungsanker',
+    subtitle:'',
   },
-  {
-    imgUrl: "bottlewineaquarell.png",
-    title: 'Qualitativ hochwertige Weine aus der Region Kaiserstuhl und Markgräflerland',
-    subtitle:
-        '',
-  },
-  {
-    imgUrl: '/cocktail02.png',
-    title: 'Internationale Cocktails - zahlreiche Kurze',
-    subtitle:
-        '',
-  },
+ 
 ];
 
 export const socials = [

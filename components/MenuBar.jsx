@@ -189,7 +189,7 @@ export default function Example() {
                     item.current
                       ? 'bg-red-700/60 text-white border border-gray-300 hover:bg-red-600'
                       : 'border border-gray-300 py-3 text-gray-300 hover:bg-gray-700 hover:text-yellow-400',
-                    'block rounded-md py-2 px-3 text-[1.66rem] font-black md:text-[2.0rem]',
+                    'block rounded-md py-2 px-3 text-[1.2bbbbb       rem] font-black md:text-[2.0rem]',
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >

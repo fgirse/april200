@@ -11,12 +11,12 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
   >
     <img
       src={imgUrl}
-      alt="planet-01"
-      className="md:w-[270px] w-full h-[250px] rounded-[32px] object-cover"
+      alt="insignCard"
+      className="md:w-[270px] w-full h-[250px] rounded-[32px] object-cover lg:w-[33vw] lg:h-[27vh]"
     />
     <div className="w-full flex justify-between items-center">
       <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px]">
-        <h4 className="font-normal lg:text-[42px] text-[26px] text-white">
+        <h4 className="font-normal lg:text-[2rem] text-[2rem] text-yellow-500 text-center">
           {title}
         </h4>
         <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] text-secondary-white">

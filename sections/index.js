@@ -4,7 +4,8 @@ import Philosophy from './Philosophy';
 import Event from './Event';
 import WhatsNew from './WhatsNew';
 import World from './World';
-import Insights from './Insights';
+import Drinks from './Drinks';
+import Team from './Team';
 import Wohin from './Wohin';
 
 export {
@@ -14,6 +15,7 @@ export {
   Event,
   WhatsNew,
   World,
-  Insights,
+  Drinks,
+  Team,
   Wohin,
 };

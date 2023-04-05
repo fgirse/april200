@@ -6,7 +6,7 @@ import { socials } from "../constants";
 
 import styles from "../styles";
 import { footerVariants } from "../utils/motion";
-
+import ScrollToTopButton from './ScrollToTopButton';
 const Footer = () => (
   <motion.footer
     variants={footerVariants}
@@ -74,6 +74,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
+    <ScrollToTopButton/>
   </motion.footer>
 );
 
