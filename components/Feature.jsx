@@ -48,7 +48,7 @@ function Example() {
           <h2 className="text-[1.66rem] font-semibold uppercase tracking-wider text-yellow-500 lg:text-5xl">
             Gastlichkeit ist unsere Philosophie.{' '}
           </h2>
-          <p className="trackin/g-tight mt-2 text-3xl font-extrabold text-gray-200 sm:text-4xl">
+          <p className="trackin/g-tight mt-2 text-[1.33rem] font-extrabold text-gray-200 sm:text-4xl">
             Rettungsanker Features
           </p>
           <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
