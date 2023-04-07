@@ -55,7 +55,7 @@ export default function Example() {
   return (
     <Disclosure
       as="header"
-      className="bg-slate-800 fixed top-0 left-0 z-[20] w-full  lg:bg-[url('/Wood4.svg')] bg-content lg:bg-cover lg:bg-no-repeat"
+      className="bg-slate-800 top-0 left-0 z-[20] w-full lg:block lg:bg-[url('/Wood4.svg')] lg:bg-content lg:bg-cover lg:bg-no-repeat"
     >
       {({ open }) => (
         <>

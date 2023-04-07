@@ -5,9 +5,8 @@ import styles from '../styles';
 import { insights } from '../constants';
 import { staggerContainer } from '../utils/motion';
 import { InsightCard, TitleText, TypingText } from '../components';
-import NukaCar from'../components/NukaCar';
 import Image from 'next/dist/client/image';
-
+import Modale03 from '../components/Modale/Modale05';
 const Drinks = () => (
   <><section id="section-drinks" className={`${styles.paddings} relative z-10`}>
     <motion.div

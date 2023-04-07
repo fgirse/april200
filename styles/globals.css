@@ -126,7 +126,7 @@ input:-webkit-autofill:focus {
   width: 100%;
 }
 
-.bg-hero_sm{
+.bg-hero{
   background-image: linear-gradient(
     to bottom,
     rgba(25, 36, 45, 1),
@@ -136,6 +136,16 @@ input:-webkit-autofill:focus {
   background-repeat: no repeat;
   height: 100vw;
   width: 100%;
+}
+
+@media (min-width: 720px) {
+	.bg-hero{
+    background-image: linear-gradient(
+      to bottom,
+      rgba(25, 36, 45, 1),
+      rgba(0, 0, 255, 0)
+  , rgba(25,36,45,1)  ), url("/5555.svg");
+  }
 }
 
 
