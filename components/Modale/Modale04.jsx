@@ -4,9 +4,9 @@ import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import Tooltip from 'react-simple-tooltip';
-'use client';
 
-export default function Modale05 () {
+
+export default function Modale04 () {
     const [isOpen, setIsOpen] = useState(false);
 
     function closeModal() {
@@ -22,15 +22,15 @@ export default function Modale05 () {
         <div className="inset-0 flex items-center justify-center">
           <div className="example-wrapper">
             <Tooltip
-              content="öffne Menue Getränke & Snaks"
+              content="öffne weitere Infos Dein Event"
               direction="right"
             >
               <button
                 type="button"
                 onClick={openModal}
-                className="mb-[3vw] w-60 rounded-md border bg-green-500 bg-opacity-80 px-4 py-2 text-[1.66rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+                className="mb-[3vw] w-60 rounded-md border bg-orange-500 bg-opacity-80 px-4 py-2 text-[1.66rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
               >
-                Getränkekarte
+                Info 
               </button>
             </Tooltip>
           </div>
@@ -66,11 +66,11 @@ export default function Modale05 () {
                       as="h3"
                       className="text-3xl font-medium leading-6 text-amber-500"
                     >
-                      Drinks & Snacks
+                      Dein Event
                     </Dialog.Title>
                     <div className="mt-2">
                       <div className="mx-auto mt-12  mb-12 w-[90%] max-w-sm items-center border border-gray-50 bg-slate-900 px-5 py-4 text-center shadow-2xl shadow-gray-400 lg:w-96 lg:max-w-xl">
-                 
+                     
                       </div>
                     </div>
   
