@@ -30,7 +30,7 @@ const World = () => (
         className="relative mt-[68px] flex w-full h-[550px]"
       >
         <img src="/Hero.png" alt="map" className="hidden border-8  rounded-2xl w-full h-full object-cover lg:block" />
-        <img src="/Collage02.png" alt="map" className="border-8 border-gray-800 rounded-2xl w-full h-full object-contain md:hidden"/>
+        <img src="/Hero3.png" alt="map" className="border-8 border-gray-800 rounded-2xl w-full h-full object-contain md:hidden"/>
       </motion.div>
     </motion.div>
   </section>

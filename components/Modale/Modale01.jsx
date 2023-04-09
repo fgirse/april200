@@ -22,7 +22,7 @@ export default function Modal01() {
         <div className="example-wrapper">
           <Tooltip
             content="öffne Kartenillustration Alt-Freiburg !!!"
-            direction="top"
+            direction="right"
           >
             <button
               type="button"
