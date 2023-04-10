@@ -1,5 +1,5 @@
 import { Footer, InfoBar ,MenuBar } from '../components';
-import { About, Philosophy, Wohin, Event, Hero, Drinks, Team, WhatsNew, World } from '../sections';
+import { About, Philosophy, Wohin, Event, Hero, Drinks, Team, Sportarena, World } from '../sections';
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
@@ -12,14 +12,15 @@ const Page = () => (
       <Philosophy />
     </div>
     <div className="relative">
+      <Drinks/>
       <Event />
       <div className="gradient-04 z-0" />
-      <WhatsNew />
+      <Sportarena />
     </div>
     <div className="relative">
-      <Drinks />
+      <Team/>
       <div className="gradient-03 z-0" />
-      <Team />
+    
       <Wohin />
     </div>
     <Footer />

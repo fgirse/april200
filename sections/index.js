@@ -2,7 +2,7 @@ import Hero from './Hero';
 import About from './About';
 import Philosophy from './Philosophy';
 import Event from './Event';
-import WhatsNew from './WhatsNew';
+import Sportarena from './Sportarena';
 import World from './World';
 import Drinks from './Drinks';
 import Team from './Team';
@@ -13,7 +13,7 @@ export {
   About,
   Philosophy,
   Event,
-  WhatsNew,
+  Sportarena,
   World,
   Drinks,
   Team,

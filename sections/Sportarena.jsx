@@ -7,7 +7,7 @@ import { newFeatures } from '../constants';
 import { NewFeatures, TitleText, TypingText } from '../components';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
 
-const WhatsNew = () => (
+const SportArena = () => (
   <section className={`${styles.paddings} relative z-10 bg-sportarena`}>
     <motion.div
       variants={staggerContainer}
@@ -43,4 +43,4 @@ const WhatsNew = () => (
   </section>
 );
 
-export default WhatsNew;
+export default SportArena;

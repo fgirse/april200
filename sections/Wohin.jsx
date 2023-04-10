@@ -3,7 +3,7 @@ import Modale01 from '../components/Modale/Modale01'
 import Image from'next/image'
 
 const Wohin = () => 
-<section id="wohin-section" className="bg-wohin bg-no-repeat w-full h-[69vh] text-center text-yellow-500 ">
+<section id="section-wohin" className="bg-wohin bg-no-repeat w-full h-[69vh] text-center text-yellow-500 ">
             
     <h1 className="mt-[12vh] text-yellow-500 headingA text-[3rem] md:text-[6rem] ">Wohin ?</h1>
     <div className='flex flex-col justify-center items-center'>
@@ -14,6 +14,12 @@ const Wohin = () =>
         <div className='mb-[3vh] w-[66vw]  bg-slate-800 rounded-2xl border flex flex-col justify-center items-center lg:flex-row'>
         <Image className='mt-[3vh]  ' src="/VAGLogo.png" width="200" height="160" alt="VAG Logo"/>
         <h1 className='text-orange text-[2rem] '>Haltestelle</h1>
+
+
+
+
+
+        <p className='text-2xl'>Holzmarkt</p>
         <h1 className='text-orange text-[2rem] '>Linie 1, 3 und 5</h1>
          </div>
 
