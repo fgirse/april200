@@ -1,16 +1,16 @@
 import React from "react"
 
-const AdditionalInformation = () => {
+const Data = () => {
     return (
         <section>
             <h3 className="text-lg">hours</h3>
-            <p className="font-typewriter lowercase">monday - friday: 8am - 4pm</p>
-            <p className="font-typewriter lowercase">saturday - sunday: 10am - 4pm</p>
-            <h3 className="text-lg">find us</h3>
-            <p className="font-typewriter lowercase">1101 Mass Ave. Boston, MA</p>
-            <p className="font-typewriter lowercase">617-303-1101</p>
+            <p className="font-typewriter lowercase">montag - donnerstag: 18 - 0 uhr</p>
+            <p className="font-typewriter lowercase">freitag - samstag: 15 - 3 uhr</p>
+            <h3 className="text-lg">wohin?</h3>
+            <p className="font-typewriter lowercase">Adelhauser-Strasse17 Freiburg, Breisgau</p>
+            <p className="font-typewriter lowercase"> -0761 383-867-47</p>
         </section>
     )
 }
 
-export default AdditionalInformation
+export default Data

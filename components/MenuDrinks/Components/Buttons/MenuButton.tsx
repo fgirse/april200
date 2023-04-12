@@ -10,7 +10,7 @@ interface MenuButtonProps {
 const MenuButton: React.FC<MenuButtonProps> = ({ menu_type, url }) => {
     return (
         <button className="s:w-[50%] 3xl:w-[50%] block w-[60%] p-[1%] justify-content align-content bg-yellow-500 border-solid rounded-button-border-radius border-button-orange border-2 text-xl uppercase m-button-margin">
-            <a className="hover:text-red-500 visited:text-medium-brown" href={url}>{menu_type} Menu</a>
+            <a className="text-0761 38386747white hover:text-red-500 visited:text-medium-brown" href={url}>{menu_type} Menu</a>
         </button>
     )
 }

@@ -8,7 +8,7 @@ import { NewFeatures, TitleText, TypingText } from '../components';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
 
 const SportArena = () => (
-  <section className={`${styles.paddings} relative z-10 bg-sportarena flex flex-col justify-beetween`}>
+  <section id="section-sportarena" className={`${styles.paddings} relative z-10 bg-sportarena flex flex-col justify-beetween`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
