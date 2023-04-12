@@ -8,7 +8,7 @@ import { NewFeatures, TitleText, TypingText } from '../components';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
 
 const SportArena = () => (
-  <section className={`${styles.paddings} relative z-10 bg-sportarena`}>
+  <section className={`${styles.paddings} relative z-10 bg-sportarena flex flex-col justify-beetween`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -18,7 +18,7 @@ const SportArena = () => (
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
-        className="flex-[0.95] flex justify-center flex-col"
+        className="flex-[1] flex justify-center flex-col"
       >
         <TypingText title="| Sportarena" />
         <TitleText title={<>Sportarena</>} />
@@ -36,7 +36,7 @@ const SportArena = () => (
         <img
           src="/Fussball.svg"
           alt="get-started"
-          className="md:w-60 md:h-60 w-[66%] h-[66%] object-contain"
+          className="md:w-60 md:h-60 w-[50%] h-[50%] object-contain"
         />
       </motion.div>
     </motion.div>
