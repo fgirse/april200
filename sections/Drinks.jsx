@@ -18,7 +18,7 @@ const Drinks = () => (
     >
       <TypingText title="| Drinks " textStyles="text-center" />
       <TitleText title={<> </>} textStyles="text-center" />
-      <h1 className='text-center text-yellow-500 text-[3rem] md:text-[4rem] lg:text-[6rem]'>Drinks & Snacks</h1>
+      <h1 className='text-center text-yellow-500 headingA text-[3rem] md:text-[4rem] lg:text-[6rem]'>Drinks & Snacks</h1>
       <div className="mb-[5vh] mt-[50px] flex flex-col gap-[30px]">
         {insights.map((item, index) => (
           <InsightCard key={`insight-${index}`} {...item} index={index + 1} />
