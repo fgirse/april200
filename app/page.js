@@ -3,9 +3,10 @@ import { About, Philosophy, Wohin, Event, Hero, Drinks, Team, Sportarena, World 
 
 
 const Page = () => (
-  <div className="bg-primary-black overflow-hidden">
+  <div className="bg-primary-black overflow-hidden flex-col">
     <MenuBar />
     <InfoBar/> 
+    <div className='flex-grow'>
     <Hero />
     <div className="relative">
       <About />
@@ -22,6 +23,7 @@ const Page = () => (
        <Team/>
       <div className="gradient-04 z-0"></div>
       <Wohin />
+    </div>
     </div>
     <Footer />
   </div>

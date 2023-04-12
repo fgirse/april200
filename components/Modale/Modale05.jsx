@@ -4,7 +4,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import Tooltip from 'react-simple-tooltip';
-'use client';
+import MenuDrinks from '../MenuDrinks/MenueDrinks';
 
 export default function Modale05 () {
     const [isOpen, setIsOpen] = useState(false);
@@ -64,14 +64,12 @@ export default function Modale05 () {
                   <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-3xl font-medium leading-6 text-amber-500"
+                      className="text-center text-3xl font-medium leading-6 text-amber-500"
                     >
                       Drinks & Snacks
                     </Dialog.Title>
-                    <div className="mt-2">
-                      <div className="mx-auto mt-12  mb-12 w-[90%] max-w-sm items-center border border-gray-50 bg-slate-900 px-5 py-4 text-center shadow-2xl shadow-gray-400 lg:w-96 lg:max-w-xl">
-                 
-                      </div>
+                    <div className="mt-2 flex-col justify-center items-center">
+                    <MenuDrinks />
                     </div>
   
                     <div className="mt-4">

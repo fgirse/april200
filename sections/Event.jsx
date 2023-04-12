@@ -6,7 +6,7 @@ import styles from '../styles';
 import { startingFeatures } from '../constants';
 import { StartSteps, TitleText, TypingText } from '../components';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
-
+import  ScrollToTopButton from '../components/ScrollToTopButton'
 const Event = () => (
   <section id="section-events" className={`${styles.paddings} relative z-10`}>
     <motion.div
@@ -45,7 +45,7 @@ const Event = () => (
         <Modale04/>
       </motion.div>
     </motion.div>
-    
+    <ScrollToTopButton />
   </section>
 );
 

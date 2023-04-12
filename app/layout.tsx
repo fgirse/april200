@@ -5,7 +5,8 @@ import { ReactNode } from "react";
 
 import '../styles/tailwind.css';
 import '../styles/tooltip.css';
-
+import '../styles/drinks.css';
+import '../styles/menudrinks.css'
 interface IProps {
   children: ReactNode;
 }
