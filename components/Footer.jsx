@@ -14,6 +14,7 @@ const Footer = () => (
     whileInView="show"
     className={`${styles.xPaddings} py-8 relative`}
   >
+    <ScrollToTopButton/>
     <div className="footer-" />
    
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
@@ -35,7 +36,7 @@ const Footer = () => (
           </span>
         </button>
       </div>
-      <ScrollToTopButton/>
+      
       <div className="flex flex-col">
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
