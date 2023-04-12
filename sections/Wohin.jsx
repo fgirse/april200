@@ -4,7 +4,7 @@ import Modale02 from '../components/Modale/Modale02'
 import Image from'next/image'
 
 const Wohin = () => 
-<section id="section-wohin" className="mb-[20vh] bg-wohin bg-no-repeat w-full h-[69vh] text-center text-yellow-500 ">
+<section id="section-wohin" className="mb-[33vh] bg-wohin bg-no-repeat w-full h-[69vh] text-center text-yellow-500 ">
             
     <h1 className="mt-[12vh] text-yellow-500 headingA text-[3rem] md:text-[6rem] ">Wohin ?</h1>
     <div className='flex flex-col justify-center items-center'>

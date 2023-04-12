@@ -21,7 +21,7 @@ const SportArena = () => (
         className="flex-[1] flex justify-center flex-col"
       >
         <TypingText title="| Sportarena" />
-        <TitleText title={<>Sportarena</>} />
+        <h1 className='headingA text-yellow-500 text-[2.33rem]'>Sportarena</h1> 
         <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
           {newFeatures.map((feature) => (
             <NewFeatures key={feature.title} {...feature} />
@@ -36,7 +36,7 @@ const SportArena = () => (
         <img
           src="/Fussball.svg"
           alt="get-started"
-          className="md:w-60 md:h-60 w-[50%] h-[50%] object-contain"
+          className="md:w-60 md:h-60 w-[60%] h-[60%] object-contain"
         />
       </motion.div>
     </motion.div>

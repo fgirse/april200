@@ -31,7 +31,7 @@ const Event = () => (
         className="flex-[0.75] text-yellow-400 flex justify-center flex-col"
       >
         <TypingText title="|Dein Event" />
-        <TitleText  title={<>Dein Event!</>} />
+        <h1 className='headingA text-yellow-500 text-[3rem]'>dein event</h1>
         <h1 className="text-[2rem]">privater oder geschäftlicher Event?</h1>
         <div className="mb-[5vw] mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           {startingFeatures.map((feature, index) => (
