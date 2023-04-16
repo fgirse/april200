@@ -3,7 +3,7 @@ import React from "react"
 const Data = () => {
     return (
         <section>
-            <h3 className="text-lg">hours</h3>
+            <h3 className="text-lg">öffnungszeiten</h3>
             <p className="font-typewriter lowercase">montag - donnerstag: 18 - 0 uhr</p>
             <p className="font-typewriter lowercase">freitag - samstag: 15 - 3 uhr</p>
             <h3 className="text-lg">wohin?</h3>

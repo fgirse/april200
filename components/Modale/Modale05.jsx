@@ -1,10 +1,15 @@
 'use client';
 
+import MyDocument from '../MenuDrinks/DrinksPDF'
+/* This is required only if the project file is located 
+inside the app. Otherwise you can use the external link of the pdf file*/
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import Tooltip from 'react-simple-tooltip';
-import MenuDrinks from '../MenuDrinks/MenueDrinks';
+import { PDFViewer } from '@react-pdf/renderer';
+ 
+
 
 export default function Modale05 () {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,15 +27,15 @@ export default function Modale05 () {
         <div className="inset-0 flex items-center justify-center">
           <div className="example-wrapper">
             <Tooltip
-              content="öffne Menue Getränke & Snaks"
+              content="öffne Menue Drinks"
               direction="right"
             >
               <button
                 type="button"
                 onClick={openModal}
-                className="mb-[3vw] w-60 rounded-md border bg-green-500 bg-opacity-80 px-4 py-2 text-[1.66rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+                className="mb-[3vw] w-80 rounded-md border bg-yellow-600 bg-opacity-80 px-4 font-medium text-white hover:bg-yellow-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
               >
-                Getränkekarte
+                Biere & Softdrinks
               </button>
             </Tooltip>
           </div>
@@ -47,7 +52,7 @@ export default function Modale05 () {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed inset-0  bg-slate-700/75" />
+              <Dialog.Overlay className="fixed inset-0  bg-slate-800/75" />
             </Transition.Child>
   
             <div className="fixed inset-0 overflow-y-auto">
@@ -61,16 +66,24 @@ export default function Modale05 () {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-red-900 p-6 text-left align-middle shadow-xl transition-all">
+                  <div className='flex flex-col justify-center items-center'>
+                  <Image src="/LogoAlt.png" width="200" height="16" alt="LogoAlt" className="mb-[3vh] uppercase text-lg text-white tracking-wider"/>
+                  </div>
                     <Dialog.Title
                       as="h3"
-                      className="text-center text-3xl font-medium leading-6 text-amber-500"
+                      className="text-center text-3xl font-medium headingA leading-6 text-amber-500"
                     >
-                      Drinks & Snacks
+                      Biere & Softdrinks
                     </Dialog.Title>
-                    <div className="mt-2 flex-col justify-center items-center">
-                    <MenuDrinks />
-                    </div>
+                    <div className='mt-2 flex flex-col justify-center items-center'>
+  <PDFViewer className="h-screen w-[95vw]" >
+    <MyDocument />
+  </PDFViewer>
+    
+      <hr />
+    </div>
+                    
   
                     <div className="mt-4">
                       <button

@@ -3,10 +3,12 @@ import MenuButton from "./MenuButton"
 
 const MenuButtons = () => {
     return (
-        <section className="pt-12 flex-col justify-center items-center">
-            <MenuButton url="/menu-pdf-food.pdf" menu_type="Food" />
-            <MenuButton url="/menu-pdf-drinks.pdf" menu_type="Drinks" />
-            <MenuButton url="/menu-pdf-catering.pdf" menu_type="Catering" />
+        <section className="pt-12 gap-y-1 flex flex-col justify-center items-center">
+            <MenuButton url="public\menu-pdf-drinks.pdf" menu_type="Drinks" />
+            <MenuButton url="/menu-pdf-weine.pdf" menu_type="Weine" />
+            <MenuButton url="/menu-pdf-cocktails.pdf" menu_type="Cocktails" />
+            <MenuButton url="/menu-pdf-kurze.pdf" menu_type="Kurze" />
+            <MenuButton url="/menu-pdf-snachs.pdf" menu_type="Snacks" />
         </section>
 
     )

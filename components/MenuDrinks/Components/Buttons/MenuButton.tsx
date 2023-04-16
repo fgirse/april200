@@ -8,9 +8,10 @@ interface MenuButtonProps {
 }
 
 const MenuButton: React.FC<MenuButtonProps> = ({ menu_type, url }) => {
+    const newLocal = "s:w-[66%] 3xl:w-[50%] block w-[86%] p-[1%] justify-content align-content bg-yellow-600 hover:bg-slate-500 border rounded-lg  uppercase m-button-margin";
     return (
-        <button className="s:w-[50%] 3xl:w-[50%] block w-[60%] p-[1%] justify-content align-content bg-yellow-500 border-solid rounded-button-border-radius border-button-orange border-2 text-xl uppercase m-button-margin">
-            <a className="text-0761 38386747white hover:text-red-500 visited:text-medium-brown" href={url}>{menu_type} Menu</a>
+        <button className={newLocal}>
+            <a className="mt-5 text-white hover:bg-red-700 visited:text-medium-brown" href={url}>{menu_type} Menu</a>
         </button>
     )
 }
