@@ -22,7 +22,7 @@ export default function InfoBar() {
             ></path>
           </svg>
           <p className="mt-[2.9px] font-mono text-[.55rem] text-gray-100 lg:text-[.66rem] xl:text-[.9rem]  2xl:text-[1.13rem]">
-            0761 38386747
+            0761 383 867 47
           </p>
         </div>
 

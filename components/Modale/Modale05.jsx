@@ -1,6 +1,6 @@
 'use client';
 
-import MyDocument from '../MenuDrinks/DrinksPDF'
+import MyDocument from '../MenuDrinks/DrinksPDF.js'
 /* This is required only if the project file is located 
 inside the app. Otherwise you can use the external link of the pdf file*/
 import { Dialog, Transition } from '@headlessui/react';
@@ -77,9 +77,7 @@ export default function Modale05 () {
                       Biere & Softdrinks
                     </Dialog.Title>
                     <div className='mt-2 flex flex-col justify-center items-center'>
-  <PDFViewer className="h-screen w-[95vw]" >
-    <MyDocument />
-  </PDFViewer>
+                        <Image src="/menu-pdf-biere.png" height={1400} width={480} alt="Menu Biere" />                
     
       <hr />
     </div>
