@@ -23,7 +23,7 @@ const Event = () => (
         <img
           src="/Crowdparty.png"
           alt="event-party"
-          className="w-[99%] h-[99%] object-contain"
+          className="w-[90%] h-[90%] object-contain"
         />
       </motion.div>
       <motion.div
