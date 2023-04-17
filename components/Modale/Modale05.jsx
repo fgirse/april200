@@ -33,7 +33,7 @@ export default function Modale05 () {
               <button
                 type="button"
                 onClick={openModal}
-                className="mb-[3vw] w-80 rounded-md border bg-yellow-600 bg-opacity-80 px-4 font-medium text-white hover:bg-yellow-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+                className="mb-[3vw] w-80 rounded-md border bg-yellow-600 bg-opacity-80 px-4 py-1 font-medium text-white hover:bg-yellow-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
               >
                 Biere & Softdrinks
               </button>
