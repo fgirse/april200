@@ -2,12 +2,12 @@
 
 import "../styles/globals.css";
 import { ReactNode } from "react";
-
 import '../styles/tailwind.css';
 import '../styles/tooltip.css';
 import '../styles/drinks.css';
 import '../styles/menudrinks.css';
 import '../styles/styles.css'
+//import 'bootstrap/dist/css/bootstrap.min.css'
 interface IProps {
   children: ReactNode;
 }

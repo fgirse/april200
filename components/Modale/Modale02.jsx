@@ -1,11 +1,19 @@
 'use client';
 
+import dynamic from 'next/dynamic'
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import Tooltip from 'react-simple-tooltip';
 
-export default function Modal01() {
+const OpenStreetMap = dynamic(() => import('../GoogleMap/OpenStreetMap'), {
+  ssr: false,
+})
+
+export default function Modale02() {
+   
+   
+
   const [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -63,14 +71,16 @@ export default function Modal01() {
                 <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-3xl font-medium leading-6 text-amber-500"
+                    className="text-3xl font-medium leading-6 text-amber-500 headingA"
                   >
-                    Open Street
+                    lageplan google map
                   </Dialog.Title>
-                  <div className="mt-2">
-                    
-                  </div>
-
+                  <h1 className='text-center'>OpenStreetMap</h1>
+                  
+                  <OpenStreetMap />
+                  
+                   
+    
                   <div className="mt-4">
                     <button
                       type="button"

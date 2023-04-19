@@ -31,7 +31,7 @@ const About = () => (
           height="320"
           width="230"
           alt="Leuchtturm"
-          className="shape-lighthouse w-[30vw] h-[20vh] lg:w-[15vw] lg:h-[15vh]"
+          className="shape-lighthouse w-[23vw] h-[24vh] lg:w-[16vw] lg:h-[16vh]"
         /></div>              
         
         <p className = "text-[1.0rem] text-gray-300 md:text-[1.33rem] lg:text-[1.66rem]"> In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im

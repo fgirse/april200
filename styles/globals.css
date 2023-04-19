@@ -172,6 +172,13 @@ input:-webkit-autofill:focus {
   filter: blur(125px);
 }
 
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+
 .hero-gradient {
   background: linear-gradient(
     97.86deg,
