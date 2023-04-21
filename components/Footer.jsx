@@ -3,13 +3,15 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { socials } from "../constants";
-
 import styles from "../styles";
 import { footerVariants } from "../utils/motion";
 import ScrollToTopButton from './ScrollToTopButton';
+
 const Footer = () => (
+  <>
+  <ScrollToTopButton className="absolute bottom-12 right-12"/>
   <section className="flex flex-col items-center justify-between">
-    <ScrollToTopButton/>
+    
   <motion.footer
     variants={footerVariants}
     initial="hidden"
@@ -81,6 +83,7 @@ const Footer = () => (
 
   </motion.footer>
   </section>
+  </>
 );
 
 export default Footer;

@@ -27,16 +27,16 @@ export default function Modale05 () {
         <div className="inset-0 flex items-center justify-center">
           <div className="example-wrapper">
             <Tooltip
-              content="öffne Menue Drinks"
+              content="Click zu Bere"
               direction="right"
             >
               <button
                 type="button"
                 onClick={openModal}
-                className="mb-[3vw] w-80 rounded-md border bg-yellow-600 bg-opacity-80 px-4 py-1 font-medium text-white hover:bg-yellow-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+                className="mb-[3vw] w-60 rounded-md border bg-yellow-600 bg-opacity-80 px-4 py-2 text-[1.66rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
               >
-                Biere & Softdrinks
-              </button>
+                Biere           
+                 </button>
             </Tooltip>
           </div>
         </div>

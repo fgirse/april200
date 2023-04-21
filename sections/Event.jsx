@@ -45,8 +45,7 @@ const Event = () => (
         <Modale04/>
       </motion.div>
     </motion.div>
-    <ScrollToTopButton />
-  </section>
+      </section>
 );
 
 export default Event;

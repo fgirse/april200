@@ -29,7 +29,7 @@ const App = () => {
       
 
       {showButton && (
-        <button onClick={scrollToTop} className="mt-[5vh] w-16 h-16 text-lg rounded-full text-center border text-white border-red-600 lg:w-20 lg:h-20">
+        <button onClick={scrollToTop} className="fixed bottom-10 right-9 mt-[5vh] w-12 h-12 text-lg rounded-full text-center border text-white border-red-600 lg:w-20 lg:h-20">
           <ArrowCircleUpIcon className="bg-red-600 rounded-full"/>
         </button>
       )}

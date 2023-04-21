@@ -2,8 +2,6 @@
 
 import Section from '../Leaf/Section';
 import Container from '../Leaf/Container';
-import Map from '../Leaf/Map';
-import Button from '../Leaf/Button';
 import dynamic from 'next/dynamic'
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
@@ -11,9 +9,8 @@ import Image from 'next/image';
 import Tooltip from 'react-simple-tooltip';
 import styles from '../../styles/Home.module.scss';
 
-const DEFAULT_CENTER = [47.99287, 7.84967]
 
-export default function Modale02() {  
+export default function Modale06() {  
   const [isOpen, setIsOpen] = useState(false);
   function closeModal() {
     setIsOpen(false);
@@ -28,7 +25,7 @@ export default function Modale02() {
       <div className="inset-0 flex items-center justify-center">
         <div className="example-wrapper">
           <Tooltip
-            content="Click zu Karte Openstreet!!!"
+            content="Click zu Softdrinks"
             direction="right"
           >
             <button
@@ -36,7 +33,7 @@ export default function Modale02() {
               onClick={openModal}
               className="mb-[3vw] w-60 rounded-md border bg-yellow-600 bg-opacity-80 px-4 py-2 text-[1.66rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
             >
-              Openstreet Map           
+              Softdrinks           
                </button>
           </Tooltip>
         </div>
@@ -70,25 +67,8 @@ export default function Modale02() {
                 <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                   <Section>
         <Container>
-          <h1 className="mb-5 text-yellow-600 text-3xl text-center headingA">
-            openstreet map
-          </h1>
-
-          <Map className={styles.homeMap} width="800" height="400" center={DEFAULT_CENTER} zoom={12}>
-            {({ TileLayer, Marker, Popup }) => (
-              <>
-                <TileLayer
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                  attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
-                />
-                <Marker position={DEFAULT_CENTER}>
-                  <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-                  </Popup>
-                </Marker>
-              </>
-            )}
-          </Map>
+          <h1 className="mb-5 text-yellow-600 text-3xl text-center headingA">Softdrinks</h1>
+       
 
            
         </Container>

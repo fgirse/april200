@@ -7,6 +7,8 @@ import { staggerContainer } from '../utils/motion';
 import { InsightCard, TitleText, TypingText } from '../components';
 import Image from 'next/dist/client/image';
 import Modale05 from '../components/Modale/Modale05';
+import Modale06 from '../components/Modale/Modale06';
+
 const Drinks = () => (
   <><section id="section-drinks" className={`${styles.paddings} relative z-10`}>
     <motion.div
@@ -24,8 +26,10 @@ const Drinks = () => (
           <InsightCard key={`insight-${index}`} {...item} index={index + 1} />
         ))}
       </div>
-
+      <div className='grid grid-cols-2 gap-5 justify-center items-center'>
           <Modale05/>
+          <Modale06/>
+          </div>
 
 
 
