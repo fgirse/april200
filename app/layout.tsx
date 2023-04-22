@@ -18,7 +18,7 @@ export default function RootLayout({ children }: IProps) {
       <body>
         
           
-        <body>{children}</body>
+        <body>{children}</body>z
         
       </body>
     </html>

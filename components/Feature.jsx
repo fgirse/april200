@@ -42,16 +42,16 @@ const features = [
 
 function Example() {
   return (
-    <div className="bg transparent py-12">
+    <div className="bg-slate-300 py-12">
       <div className="mx-auto max-w-xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="text-[1.66rem] font-semibold uppercase tracking-wider text-yellow-500 lg:text-5xl">
+          <h2 className="text-[1.66rem] font-bold uppercase tracking-wider text-yellow-600 lg:text-5xl">
             Gastlichkeit ist unsere Philosophie.{' '}
           </h2>
-          <p className="trackin/g-tight mt-2 text-[1.33rem] font-extrabold text-gray-200 sm:text-4xl">
+          <p className="trackin/g-tight mt-2 text-[1.33rem] font-extrabold text-gray-700 sm:text-4xl">
             Rettungsanker Features
           </p>
-          <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
+          <p className="mx-auto mt-5 max-w-prose text-xl text-gray-800">
             Der Rettungsanker Freiburg ist ein Treffpunkt zum Spass und gute
             Laune haben. Geniessen Sie unser Angebot welches wir anstreben
             ständig zu verbessern ! Sollten Sie einen besonderen Wunsch haben -
@@ -69,11 +69,11 @@ function Example() {
                         alt=""
                       />
                     </div>
-                    <p className="mt-5 text-lg font-medium leading-6 text-yellow-400 text-[2.33rem]">
+                    <p className="mt-5 text-lg font-medium leading-6 text-yellow-700 text-[2.33rem]">
                       {feature.name}
                     </p>
                   </dt>
-                  <dd className="mt-2 text-base text-gray-300 lg:text-[1.33rem]">
+                  <dd className="mt-2 text-base text-gray-800 lg:text-[1.33rem]">
                     {feature.description}
                   </dd>
                 </div>

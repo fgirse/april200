@@ -25,13 +25,13 @@ const About = () => (
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-gray-500"
       >
         <h1 className="text-[2.5rem] lg:text-[4rem] font-extrabold text-yellow-500 text-center">&quot;Moin Moin&quot;</h1>
-        <div className='md: w-[20vw] md: lg:h[20vh]  '>
+        <div className='w-36 h-36  md:w-[20vw] lg:w[20vh]  '>
           <Image
           src="/lighthouse3.png"
           height="320"
           width="230"
           alt="Leuchtturm"
-          className="shape-lighthouse w-[23vw] h-[24vh] lg:w-[16vw] lg:h-[16vh]"
+          className="shape-lighthouse h-52 w-52"
         /></div>              
         
         <p className = "text-[1.0rem] text-gray-300 md:text-[1.33rem] lg:text-[1.66rem]"> In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im
@@ -61,7 +61,7 @@ const About = () => (
         </div>
       </motion.div>
       <div className="flex flex-col items-center justify-center">
-          <Tooltip fontSize="0.866rem" padding="2px" content="sende email an rettungsanker-freiburg@gmx.de" direction="top" border="#ffffff" background="#d000ff">
+          <Tooltip fontSize="0.866rem" padding="2px" content="sende email an rettungsanker-freiburg@gmx.de" direction="top" border="#ffffff" background="#898989">
             <button className="lg-justify-between relative mx-auto mb-5 mt-6 flex w-52 flex-row items-center justify-center gap-x-3 rounded-lg border border-transparent bg-yellow-500 px-4 py-2 font-sans text-2xl font-medium  text-gray-200 transition delay-150 duration-300 ease-in-out hover:-translate-y-1  hover:scale-110 hover:bg-indigo-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 md:text-3xl lg:mb-20 lg:flex lg:w-80 lg:flex-row lg:items-center lg:text-2xl xl:mt-2" type="button">
               <svg
                 className="w-16 lg:w-20 "

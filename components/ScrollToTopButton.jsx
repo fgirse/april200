@@ -29,8 +29,8 @@ const App = () => {
       
 
       {showButton && (
-        <button onClick={scrollToTop} className="fixed bottom-10 right-9 mt-[5vh] w-12 h-12 text-lg rounded-full text-center border text-white border-red-600 lg:w-20 lg:h-20">
-          <ArrowCircleUpIcon className="bg-red-600 rounded-full"/>
+        <button onClick={scrollToTop} className="fixed bottom-[5vh] right[2vw] w-6 h-6 text-lg rounded-full text-center border text-white border-red-600 lg:w-8 lg:h-8">
+          <ArrowCircleUpIcon className="w-[5vw] bg-red-600 rounded-full"/>
         </button>
       )}
       {/* &#8679; is used to create the upward arrow */}
