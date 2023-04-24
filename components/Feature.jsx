@@ -1,5 +1,6 @@
 import { Feature } from 'ol';
 import React from 'react';
+import Modale03 from './Modale/Modale03';
 
 const features = [
   {
@@ -79,6 +80,8 @@ function Example() {
                 </div>
               ))}
             </dl>
+
+            <Modale03/>
           </div>
         </div>
       </div>

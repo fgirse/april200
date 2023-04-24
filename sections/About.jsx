@@ -31,7 +31,7 @@ const About = () => (
           height="320"
           width="230"
           alt="Leuchtturm"
-          className="shape-lighthouse h-52 w-52"
+          className="shape-lighthouse h-48 w-48"
         /></div>              
         
         <p className = "text-[1.0rem] text-gray-300 md:text-[1.33rem] lg:text-[1.66rem]"> In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im
@@ -72,7 +72,7 @@ const About = () => (
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
-              <a className="ui btn" href="mailto:rettungsanker-freiburg@gmx.de?">SOS email</a> </button>
+              <a className="ui btn" href="mailto:rettungsanker-freiburg@gmx.de?">email</a> </button>
           </Tooltip>
         </div>
         <p className="text-yellow-500 text-center">scrolling down</p>

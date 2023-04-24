@@ -8,7 +8,7 @@ import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import Tooltip from 'react-simple-tooltip';
 import styles from '../../styles/Home.module.scss';
-
+import Button  from '../Buttons/index';
 
 export default function Modale06() {  
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ export default function Modale06() {
       <div className="inset-0 flex items-center justify-center">
         <div className="example-wrapper">
           <Tooltip
-            content="Click zu Softdrinks"
+            content="Click zu Reservation!!!"
             direction="right"
           >
             <button
@@ -33,11 +33,12 @@ export default function Modale06() {
               onClick={openModal}
               className="mb-[3vw] w-60 rounded-md border bg-yellow-600 bg-opacity-80 px-4 py-2 text-[1.66rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
             >
-              Softdrinks           
+  Reservation
                </button>
           </Tooltip>
         </div>
       </div>
+
 
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
