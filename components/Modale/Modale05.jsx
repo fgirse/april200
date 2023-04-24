@@ -8,7 +8,7 @@ import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import Tooltip from 'react-simple-tooltip';
 import { PDFViewer } from '@react-pdf/renderer';
- 
+import Menu from '../MenuDrinks/Container/Menu/SpecialMenu'
 
 
 export default function Modale05 () {
@@ -27,7 +27,7 @@ export default function Modale05 () {
         <div className="inset-0 flex items-center justify-center">
           <div className="example-wrapper">
             <Tooltip
-              content="Click zu Bere"
+              content="Click zu Biere"
               direction="right"
             >
               <button
@@ -74,10 +74,11 @@ export default function Modale05 () {
                       as="h3"
                       className="text-center text-3xl font-medium headingA leading-6 text-amber-500"
                     >
-                      Biere & Softdrinks
+                      Bier vom Fass - Flaschenpost
                     </Dialog.Title>
                     <div className='mt-2 flex flex-col justify-center items-center'>
-                        <Image src="/menu-pdf-biere.png" height={1400} width={480} alt="Menu Biere" />                
+                      <Menu/>
+                        {/*<Image src="/menu-pdf-biere.png" height={1400} width={480} alt="Menu Biere" />*/}                
     
       <hr />
     </div>
