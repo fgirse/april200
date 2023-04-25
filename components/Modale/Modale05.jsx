@@ -1,4 +1,6 @@
 'use client';
+
+
 /* This is required only if the project file is located 
 inside the app. Otherwise you can use the external link of the pdf file*/
 import { Dialog, Transition } from '@headlessui/react';

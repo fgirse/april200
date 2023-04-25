@@ -1,5 +1,5 @@
-import SubHeading from '../Components/SubHeading/SubHeading';
-import MenuItem from '../MenuItem/MenuItem';
+import SubHeading from './Subheading/SubHeading';
+import MenuItem from './MenuItem/MenuItem';
 
 export {
   SubHeading,
