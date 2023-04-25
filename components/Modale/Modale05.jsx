@@ -4,11 +4,12 @@
 /* This is required only if the project file is located 
 inside the app. Otherwise you can use the external link of the pdf file*/
 import { Dialog, Transition } from '@headlessui/react';
+import Section from '../Leaf/Section';
+import Container from '../Leaf/Container';
 import { Fragment, useState } from 'react';
 import Image from 'next/image';
-import Tooltip from 'react-simple-tooltip';
-import { PDFViewer } from '@react-pdf/renderer';
-import Menu from '../MenuDrinks/Container/Menu/SpecialMenu'
+import Tooltip from '../../utils/SimpleTooltip';
+import { SpecialMenu } from '../MenuDrinks/container';
 
 
 export default function Modale05 () {
@@ -66,22 +67,18 @@ export default function Modale05 () {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-red-900 p-6 text-left align-middle shadow-xl transition-all">
-                  <div className='flex flex-col justify-center items-center'>
-                  <Image src="/LogoAlt.png" width="200" height="16" alt="LogoAlt" className="mb-[3vh] uppercase text-lg text-white tracking-wider"/>
-                  </div>
-                    <Dialog.Title
-                      as="h3"
-                      className="text-center text-3xl font-medium headingA leading-6 text-amber-500"
-                    >
-                      Bier vom Fass - Flaschenpost
-                    </Dialog.Title>
-                    <div className='mt-2 flex flex-col justify-center items-center'>
-                      <Menu/>
-                        {/*<Image src="/menu-pdf-biere.png" height={1400} width={480} alt="Menu Biere" />*/}                
-    
-      <hr />
-    </div>
+                <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                <Section>
+      <Container>
+        <h1 className="mb-5 text-yellow-600 text-3xl text-center headingA">
+          openstreet map
+        </h1>
+
+        <SpecialMenu/>
+
+         
+      </Container>
+    </Section>
                     
   
                     <div className="mt-4">

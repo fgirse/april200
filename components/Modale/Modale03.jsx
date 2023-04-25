@@ -8,7 +8,6 @@ import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import Tooltip from 'react-simple-tooltip';
 import styles from '../../styles/Home.module.scss';
-import Button  from '../Buttons/index';
 
 export default function Modale06() {  
   const [isOpen, setIsOpen] = useState(false);
