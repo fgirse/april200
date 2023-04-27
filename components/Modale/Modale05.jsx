@@ -29,7 +29,7 @@ export default function Modale05 () {
           <div className="example-wrapper">
             <Tooltip
               content="Click zu Biere"
-              direction="right"
+              direction="top"
             >
               <button
                 type="button"
@@ -67,15 +67,17 @@ export default function Modale05 () {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="border-gray-100-500 w-full max-w-xl transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                 <Section>
       <Container>
-        <h1 className="mb-5 text-yellow-600 text-3xl text-center headingA">
-          openstreet map
+        <div className='11/12 flex flex-col items-center justify-center'>
+        <Image height="2000" width="200" className='' alt="LogoAlt" src="/LogoAlt.png" />
+        <h1 className="mb-5 text-red-600 text-4xl lg:text-5xl text-center">
+           Biere
         </h1>
 
         <SpecialMenu/>
-
+        </div>
          
       </Container>
     </Section>

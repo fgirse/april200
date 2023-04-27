@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/Modale/Modale02.jsx", "components/MenuDrinks/Components/SubHeading/SubHeading.jsx", "components/MenuDrinks/Components/index.jsx"  ],
+, "components/Modale/Modale02.jsx", "components/MenuDrinks/Subheading/SubHeading.jsx", "components/MenuDrinks/index.jsx", "data/images.jsx"  ],
   "exclude": [
     "node_modules"
   ]

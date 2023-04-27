@@ -52,7 +52,7 @@ const About = () => (
         <Image
           src="/portraitmick.png"
           height="80"
-          width="72"
+          width="60"
           float="left"
           alt="Portrait"
           className=" mt-5 rounded-full portraitMick"

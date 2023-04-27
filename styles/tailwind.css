@@ -104,34 +104,3 @@ input:-webkit-autofill:focus {
 }
 
 
-
-.newspaperA {
-  columns: 133px 2;
-  color: white;
-  font-family: "Architects Daughter";
-}
-
-.newspaper {
-  columns: 166px 2;
-  column-gap: 6rem;
-  line-height: 0.66rem;
-  color: white;
-  font-family: "Architects Daughter";
-  column-rule: thin inset orange;
-}
-
-.newspaperC {
-  columns: 66px 3;
-  column-gap: 6rem;
-  line-height: 0.66rem;
-  color: white;
-  font-family: "Architects Daughter";
-  columns: 66px 1;
-  column-gap: 6rem;
-  line-height: 0.66rem;
-  color: white;
-  font-family: "Architects Daughter";
-  column-rule: thin inset orange;
-}
-
-

@@ -54,7 +54,7 @@ const people = [
 
 export default function Example() {
   return (
-    <section id="section-team" className="mt-[24vh]   bg-gradient-to-b from-[#1A232E] to-[#1A232E] lg:bg-[url('/ocean.jpeg')] lg:bg-[length:100vw_15vh] lg:bg-center lg:bg-no-repeat">
+    <section id="section-team" className="mt-[24vh]   bg-gradient-to-b from-[#1A232E] to-[#1A232E] lg:bg-[url('/5555.svg')] lg:bg-[length:100vw_15vh] lg:bg-center lg:bg-no-repeat">
       <div className="py- mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8 lg:py-20">
         <div className="space-y-5 sm:space-y-1">
           <div className="space-y-3 sm:mx-auto sm:max-w-xl lg:max-w-5xl">
@@ -62,10 +62,10 @@ export default function Example() {
               <h2 className="headingA text-7xl font-extrabold tracking-tight text-yellow-600 sm:text-8xl 2xl:text-6xl">
                 Das Team
               </h2>
-              <Image
+              <img
                 src="/matroseimseil.png"
-                width="50"
-                height="75"
+                width="60"
+                height="auto"
                 alt="LogoAlt"
               />
             </div>
@@ -84,11 +84,11 @@ export default function Example() {
           {people.map((person) => (
             <li key={person.name}>
               <div className="space-y-6">
-                <Image
+                <img
                   className="lg:border-5 mx-auto h-40 w-40 rounded-full lg:border-yellow-500 xl:h-56 xl:w-56"
                   src={person.imageUrl}
                   width="200"
-                  height="200"
+                  height="auto"
                   alt=""
                 />
                 <div className="space-y-2">
