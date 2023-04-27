@@ -9,7 +9,7 @@ import Container from '../Leaf/Container';
 import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import Tooltip from '../../utils/SimpleTooltip';
-import { SpecialMenu } from '../MenuDrinks/container';
+import { SpecialMenu } from '../../components/MenuDrinks/Container/';
 
 
 export default function Modale05 () {
@@ -67,7 +67,7 @@ export default function Modale05 () {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                <Dialog.Panel className="border-gray-100-500 w-full max-w-xl transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="border-yellow-500 w-full max-w-7xl transform overflow-hidden rounded-2xl border-8 bg-slate-800 p-6 text-left align-middle shadow-xl transition-all">
                 <Section>
       <Container>
         <div className='11/12 flex flex-col items-center justify-center'>
