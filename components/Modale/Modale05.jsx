@@ -68,7 +68,7 @@ export default function Modale05 () {
                   leaveTo="opacity-0 scale-95"
                 >
 
-        <Dialog.Panel className="border-yellow-600 w-full max-w-lg transform overflow-hidden rounded-2xl border-8 bg-[#0C0C0C] p-6 text-left align-middle shadow-xl transition-all">
+        <Dialog.Panel className="border-yellow-600 w-full max-w-6xl transform overflow-hidden rounded-2xl border-8 bg-[#0C0C0C] p-2 text-left align-middle shadow-xl transition-all">
             <Section>
       <Container>
         <div className='11/12 flex flex-col items-center justify-center'>

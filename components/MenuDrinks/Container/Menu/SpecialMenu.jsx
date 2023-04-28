@@ -7,10 +7,13 @@ import Image from 'next/image';
 
 const SpecialMenu = () => (
   <div className="app__specialMenu flex__center section__padding" id="menu">
+    
+    <div className='flex fex-col items-center justify-center'>
+    <Image height="2000" width="200" className='' alt="LogoAlt" src="/LogoAlt.png" />
+    </div>
     <div className="app__specialMenu-title">
       <h1 className="headtext__cormorant">Biere</h1>
     </div>
-    <Image height="2000" width="200" className='' alt="LogoAlt" src="/LogoAlt.png" />
     <div className="app__specialMenu-menu">
       <div className="app__specialMenu-menu_flaschenPost  flex__center">
         <p className="app__specialMenu-menu_heading">Bier vom Fass</p>
@@ -22,7 +25,7 @@ const SpecialMenu = () => (
       </div>
 
       <div className="app__specialMenu-menu_img">
-        <img src={images.logo} alt="menu__img" />
+        <img src="/beer1.png" width="299" height="120" alt="menu__img" />
       </div>
 
       <div className="app__specialMenu-menu_flaschenPost  flex__center">

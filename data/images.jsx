@@ -1,4 +1,4 @@
-import logo from'../public/LogoNeu.png';
+import logo from'../public/Bierglas99.svg';
 
 export default {
   logo
