@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --font-base: 'Cormorant Upright', BowlbyOneSC;
+  --font-base: 'Architects Daughter', BowlbyOneSC;
   --font-alt: 'Open Sans', BowlbyOneSC;
   
   --color-golden: #DCCA87;
@@ -11,7 +11,8 @@
   --color-gray: #545454;
   --color-crimson: #F5EFDB;
   --color-grey: #AAAAAA;
-  --color-slate: #10172A
+  --color-slate-900: #10172A;
+  --color-darkred: #701A1C;
   --color-white: #FFFFFF;
 }
 
@@ -211,7 +212,7 @@ input:-webkit-autofill:focus {
   right: 0px;
 
   background: #16212A;
-  filter: blur(190px);
+  
 }
 
 .glassmorphism {

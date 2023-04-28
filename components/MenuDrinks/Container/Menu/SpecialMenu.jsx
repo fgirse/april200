@@ -3,13 +3,14 @@ import React from 'react';
 import {  MenuItem, SubHeading } from '../../../MenuDrinks';
 import { data, images  } from '../../../../data/'
 import './SpecialMenu.css';
+import Image from 'next/image';
 
 const SpecialMenu = () => (
   <div className="app__specialMenu flex__center section__padding" id="menu">
     <div className="app__specialMenu-title">
-      <h1 className="headtext__cormorant">Today&apos;s Special</h1>
+      <h1 className="headtext__cormorant">Biere</h1>
     </div>
-
+    <Image height="2000" width="200" className='' alt="LogoAlt" src="/LogoAlt.png" />
     <div className="app__specialMenu-menu">
       <div className="app__specialMenu-menu_flaschenPost  flex__center">
         <p className="app__specialMenu-menu_heading">Bier vom Fass</p>

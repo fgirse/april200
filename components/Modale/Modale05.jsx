@@ -67,15 +67,13 @@ export default function Modale05 () {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                <Dialog.Panel className="border-yellow-500 w-full max-w-7xl transform overflow-hidden rounded-2xl border-8 bg-slate-800 p-6 text-left align-middle shadow-xl transition-all">
-                <Section>
+
+        <Dialog.Panel className="border-yellow-600 w-full max-w-lg transform overflow-hidden rounded-2xl border-8 bg-[#0C0C0C] p-6 text-left align-middle shadow-xl transition-all">
+            <Section>
       <Container>
         <div className='11/12 flex flex-col items-center justify-center'>
-        <Image height="2000" width="200" className='' alt="LogoAlt" src="/LogoAlt.png" />
-        <h1 className="mb-5 text-red-600 text-4xl lg:text-5xl text-center">
-           Biere
-        </h1>
-
+        
+       
         <SpecialMenu/>
         </div>
          

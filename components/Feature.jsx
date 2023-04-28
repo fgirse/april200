@@ -43,7 +43,7 @@ const features = [
 
 function Example() {
   return (
-    <div className="bg-slate-300 py-12">
+    <div className="rounded-lg bg-slate-400 py-12">
       <div className="mx-auto max-w-xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
           <h2 className="text-[1.66rem] font-bold uppercase tracking-wider text-yellow-600 lg:text-5xl">

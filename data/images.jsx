@@ -1,4 +1,4 @@
-import logo from'../public/LogoNeu.js';
+import logo from'../public/LogoNeu.png';
 
 export default {
   logo
