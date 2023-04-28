@@ -10,7 +10,7 @@ import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import Tooltip from '../../utils/SimpleTooltip';
 import { SpecialMenu } from '../../components/MenuDrinks/Container/';
-
+import ScrollToTop from '../ScrollToTopButton'
 
 export default function Modale05 () {
     const [isOpen, setIsOpen] = useState(false);
@@ -31,13 +31,25 @@ export default function Modale05 () {
               content="Click zu Biere"
               direction="top"
             >
-              <button
+              {/*{<button
                 type="button"
                 onClick={openModal}
                 className="mb-[3vw] w-60 rounded-md border bg-yellow-600 bg-opacity-80 px-4 py-2 text-[1.66rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
               >
                 Biere           
-                 </button>
+              </button>*/}
+
+      
+          <Image
+            src="/astrabierglas.png"
+            width="200"
+            height="300"
+            alt="illustration astrabierglas"
+            onClick={(openModal)}
+            curser = "grab"
+          />
+      
+
             </Tooltip>
           </div>
         </div>
@@ -78,6 +90,7 @@ export default function Modale05 () {
         </div>
          
       </Container>
+      <ScrollToTop className='bg-transparent text-white text-3xl'/>
     </Section>
                     
   

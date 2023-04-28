@@ -329,7 +329,7 @@ input:-webkit-autofill:focus {
 	}
 }
 
-// Text meant only for screen readers.
+
 .screen-reader-text {
 	position: absolute;
 	clip-path: inset(50%);

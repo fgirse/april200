@@ -133,7 +133,7 @@ export default function Footer() {
           <div className="mx-auto w-full px-4 text-center md:w-8/12">
             <div className="mb-[3vh] py-1 text-sm font-semibold text-gray-100 lg:text-[0.77rem]">
               Copyright © {new Date().getFullYear()}{' '}
-              <span className="headingB font-black text-gray-900">
+              <span className="headingA font-black text-black">
                 {' '}
                 medicus design basel switzerland
               </span>{' '}

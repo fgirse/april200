@@ -37,7 +37,7 @@
     "next-auth": "^4.19.2",
     "nuka-carousel": "^5.5.0",
     "ol": "^7.2.2",
-    "postcss-nesting": "^11.2.1",
+    "postcss-nesting": "^11.2.2",
     "prisma": "^4.10.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",

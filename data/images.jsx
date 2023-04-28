@@ -1,5 +1,4 @@
-import logo from'../public/Bierglas99.svg';
-
+import astra from '../public/astra-remove.png';
 export default {
-  logo
+  astra
 };

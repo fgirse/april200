@@ -25,7 +25,7 @@ const SpecialMenu = () => (
       </div>
 
       <div className="app__specialMenu-menu_img">
-        <img src="/beer1.png" width="299" height="120" alt="menu__img" />
+        <Image src={images.astra} width="200" height="200" alt="menu__img" />
       </div>
 
       <div className="app__specialMenu-menu_flaschenPost  flex__center">
