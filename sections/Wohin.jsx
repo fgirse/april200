@@ -15,13 +15,9 @@ const Wohin = () =>
 
 
         <Modale02/>
-        <div className='mb-[5vh] w-[66vw]  bg-slate-800 rounded-2xl border flex flex-col justify-center items-center lg:flex-row'>
+        <div className='mb-[5vh] w-[66vw]  bg-slate-800/10 rounded-2xl border flex flex-col justify-center items-center lg:flex-row'>
         <Image className='mt-[5vh]  ' src="/VAGLogo.png" width="200" height="160" alt="VAG Logo"/>
         <h1 className='text-orange text-[2rem] '>Haltestelle</h1>
-
-
-
-
 
         <p className='text-2xl'>Holzmarkt</p>
         <h1 className='text-orange text-[2rem] '>Linie 1, 3 und 5</h1>

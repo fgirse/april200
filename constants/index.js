@@ -52,8 +52,8 @@ export const newFeatures = [
 
 export const insights = [
   {
-    imgUrl: '/bottles03.png',
-    title: 'Getränkekarte Rettungsanker',
+    imgUrl: '/arrow.svg',
+    title: 'Wähle eines der Menusymbole',
     subtitle:'',
   },
  

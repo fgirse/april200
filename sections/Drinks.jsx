@@ -30,7 +30,7 @@ const Drinks = () => (
           <InsightCard key={`insight-${index}`} {...item} index={index + 1} />
         ))}
       </div>
-      <div className='w-full h-auto lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0lg:grid md:grid-cols-2 lg:grid-col3 lg:grid-rows-2 gap-5 justify-center items-center'>
+      <div className='w-full h-auto md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0lg:grid md:grid-cols-2 lg:grid-col3 lg:grid-rows-2 gap-5 justify-center items-center'>
           <Modale05/>
           <Modale06/>
           <Modale07/>
