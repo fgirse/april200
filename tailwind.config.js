@@ -19,6 +19,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('@headlessui/tailwindcss','daisyui')]
+    require('@headlessui/tailwindcss','tw-elements/dist/plugin.cjs')]
    
 };
