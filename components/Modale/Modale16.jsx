@@ -9,10 +9,10 @@ import Container from '../Leaf/Container';
 import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import Tooltip from '../../utils/SimpleTooltip';
-import { SpecialMenu } from '../../components/MenuDrinks/Container/';
+import { SpecialMenu } from '../MenuDrinks/Container';
 import ScrollToTop from '../ScrollToTopButton'
 
-export default function Modale15 () {
+export default function Modale16 () {
     const [isOpen, setIsOpen] = useState(false);
 
     function closeModal() {
@@ -38,13 +38,9 @@ export default function Modale15 () {
                 className="mx-auto mb-[3vw] w-[70px] h-[70px] rounded-[24px] bg-[#edc513] text-[1.66rem] font-medium text-white hover:bg-opacity-70 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
               >
                  <div className="flex flex-col items-center">
-                <img src="/footballIcon.svg" alt="icon" className="w-3/4 h-3/4 object-contain" />
+                <img src="/logoDFL.png" alt="icon" className="w-3/4 h-3/4 object-contain" />
                 </div>     
               </button>
-
-      
-        
-      
 
             </Tooltip>
           </div>
@@ -82,7 +78,7 @@ export default function Modale15 () {
         <div className='11/12 flex flex-col items-center justify-center'>
         
        
-        <p className='text-center text-white text-[4rem]'>SC FREIBURG</p>
+        <p className='text-center text-amber-500 text-[4rem]'>Tabelle Bundesliga</p>
          </div>
          
       </Container>

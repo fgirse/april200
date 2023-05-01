@@ -35,12 +35,7 @@ export const startingFeatures = [
 ];
 
 export const newFeatures = [
-  {
-    imgUrl: '/footballIcon.svg',
-    title: 'SC Freiburg',
-    subtitle:
-        'Daten - Fakten - Punkte - Tore',
-  },
+
   {
     imgUrl: '/LogoDFL.png',
     title: 'Die Bundesliga',
