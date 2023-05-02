@@ -5,6 +5,7 @@ import { About, Philosophy, Wohin, Event, Hero, Drinks, Team, Sportarena, World 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden flex-col">
     <MenuBar />
+  
     <InfoBar/> 
     <div className='flex-grow'>
     <Hero />

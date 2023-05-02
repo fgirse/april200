@@ -59,7 +59,7 @@ export default function Example() {
         <div className="space-y-5 sm:space-y-1">
           <div className="space-y-3 sm:mx-auto sm:max-w-xl lg:max-w-5xl">
             <div className=" flex flex-row items-start justify-center gap-x-5">
-              <h2 className="headingA text-7xl font-extrabold tracking-tight text-yellow-600 sm:text-8xl 2xl:text-6xl">
+              <h2 className="headingA text-6xl font-extrabold tracking-tight text-yellow-600 sm:text-7xl 2xl:text-6xl">
                 Das Team
               </h2>
               <img

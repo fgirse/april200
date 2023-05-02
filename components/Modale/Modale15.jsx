@@ -6,11 +6,10 @@ inside the app. Otherwise you can use the external link of the pdf file*/
 import { Dialog, Transition } from '@headlessui/react';
 import Section from '../Leaf/Section';
 import Container from '../Leaf/Container';
-import { Fragment, useState } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import Image from 'next/image';
 import Tooltip from '../../utils/SimpleTooltip';
-import { SpecialMenu } from '../../components/MenuDrinks/Container/';
-import ScrollToTop from '../ScrollToTopButton'
+import Modale03 from '../Modale/Modale03'
 
 export default function Modale15 () {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,32 +22,58 @@ export default function Modale15 () {
       setIsOpen(true);
     }
   
-    return (
-      <>
-        <div className="inset-0 flex items-center justify-center">
-          <div className="example-wrapper">
-            <Tooltip
-              content="Click zu SC Freiburg Info"
-              direction="top"
-            >
-              <button
+    function Sportarena() {
+      const [tabelle, setTabelle] = useState([]);
+      var [loading, setLoading] = useState(true);
+
+      useEffect(() => {
+        const Token = '41c4813ea4f746fbbdd2bdb9c5250aa4';
+        const Url = 'https://api.football-data.org/v2/competitions/2002/standings?';
+        const url2 = (Url, { headers: { 'X-Auth-Token': Token } });
+        const url4 =
+          'https://api.football-data.org/v2/competitions/2002/standings?X-Auth-Token=41c4813ea4f746fbbdd2bdb9c5250aa4';
+    
+        // declare the data fetching function
+    
+        const fetchBundesligaData = async () => {
+          try {
+            const response = await fetch(Url, {
+              headers: { 'X-Auth-Token': Token },
+            });
+            const json = await response.json();
+            console.log(json.season);
+            setTabelle(json.season);
+          } catch (error) {
+            console.log('error', error);
+          }
+        };
+    
+        fetchBundesligaData();
+        setLoading((loading = false));
+      }, []);
+
+      return (
+        <>
+          <div className="inset-0 flex items-center justify-center">
+            <div className="example-wrapper">
+              <Tooltip
+                content="Click SC Freiburg Info"
+                direction="right"
+              >
+                <button
                 type="button"
                 onClick={openModal}
                
                 className="mx-auto mb-[3vw] w-[70px] h-[70px] rounded-[24px] bg-[#edc513] text-[1.66rem] font-medium text-white hover:bg-opacity-70 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
               >
                  <div className="flex flex-col items-center">
-                <img src="/footballIcon.svg" alt="icon" className="w-3/4 h-3/4 object-contain" />
+                <img src="/logoDFL.png" alt="icon" className="w-3/4 h-3/4 object-contain" />
+                
                 </div>     
-              </button>
-
-      
-        
-      
-
-            </Tooltip>
+                </button>
+              </Tooltip>
+            </div>
           </div>
-        </div>
   
         <Transition appear show={isOpen} as={Fragment}>
           <Dialog as="div" className="relative z-10" onClose={closeModal}>
@@ -108,4 +133,4 @@ export default function Modale15 () {
       </>
     );
   }
-
+}

@@ -43,13 +43,12 @@ const features = [
 
 function Example() {
   return (
-    <div className="rounded-lg bg-slate-400 py-12">
+  
+    <><h1 className='mb-[2rem] text-5xl text-yellow-600 text-center'>Gastlichkeit ist unsere Philosphie</h1><div className="rounded-lg bg-slate-400 py-12">
       <div className="mx-auto max-w-xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="text-[1.66rem] font-bold uppercase tracking-wider text-yellow-600 lg:text-5xl">
-            Gastlichkeit ist unsere Philosophie.{' '}
-          </h2>
-          <p className="trackin/g-tight mt-2 text-[1.33rem] font-extrabold text-gray-700 sm:text-4xl">
+
+          <p className="trackin/g-tight mt-2 text-[1.33rem] font-extrabold text-white sm:text-4xl">
             Rettungsanker Features
           </p>
           <p className="mx-auto mt-5 max-w-prose text-xl text-gray-800">
@@ -59,7 +58,7 @@ function Example() {
             sprechen Sie uns an ! Wir werden versuchen Ihre Anliegen umzusetzen.
           </p>
           <div className="mt-12">
-            <dl className="space-y-10 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+            <dl className="space-y-10 md-grid md:grid-cols-2 lg:grid-cols-3 lg:gap-8 lg:space-y-0">
               {features.map((feature) => (
                 <div key={feature.name}>
                   <dt>
@@ -67,8 +66,7 @@ function Example() {
                       <img
                         className="mx-auto h-32 w-36  xl:h-24 xl:w-24"
                         src={feature.imageUrl}
-                        alt=""
-                      />
+                        alt="" />
                     </div>
                     <p className="mt-5 text-lg font-medium leading-6 text-yellow-700 text-[2.33rem]">
                       {feature.name}
@@ -80,12 +78,15 @@ function Example() {
                 </div>
               ))}
             </dl>
-
-            <Modale03/>
+                <div className='mt-[3vh]'>
+                <Modale03/>
+                </div>
+            
           </div>
         </div>
       </div>
-    </div>
+    </div></>
+    
   );
-}
+  }
 export default Example

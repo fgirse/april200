@@ -5,13 +5,15 @@ import ExploreCard from './ExploreCard';
 import StartSteps from './StartSteps';
 import NewFeatures from './NewFeatures';
 import InsightCard from './InsightCard';
+//import Navigation from './Navigation';
 import Footer from './Footer';
 
 export {
   MenuBar,
   InfoBar,
+
   TitleText,
-  TypingText,
+  TypingText,  
   StartSteps,
   NewFeatures,
   ExploreCard,

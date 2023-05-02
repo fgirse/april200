@@ -35,9 +35,14 @@ export const startingFeatures = [
 ];
 
 export const newFeatures = [
-
   {
-    imgUrl: '/LogoDFL.png',
+    modale: '<Modale15/>',
+    title: 'SC Freiburg',
+    subtitle:
+        'Daten - Fakten - Punkte - Tore',
+  },
+  {
+    modale: '<Modale16/>',
     title: 'Die Bundesliga',
 
     subtitle:

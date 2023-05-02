@@ -3,9 +3,10 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { newFeatures } from '../constants';
 import { NewFeatures, TitleText, TypingText } from '../components';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
+import Modale15 from '../components/Modale/Modale15';
+import Modale16 from '../components/Modale/Modale16';
 
 const SportArena = () => (
   <section id="section-sportarena" className={`${styles.paddings} relative z-10 bg-sportarena flex flex-col justify-beetween`}>
@@ -22,10 +23,20 @@ const SportArena = () => (
       >
         <TypingText title="| Sportarena" />
         <h1 className='headingA text-yellow-500 text-[2.33rem]'>Sportarena</h1> 
-        <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
-          {newFeatures.map((feature) => (
-            <NewFeatures key={feature.title} {...feature} />
-          ))}
+        <div className="mt-[48px] flex flex-wrap items-center justify-between md:flex md:flex-row gap-[24px]">
+          <div >
+            <Modale15/>
+            <h1 className='text-white text-[2.33rem]'>SC Freiburg Info</h1>
+            <h1 className='text-white text-[1.33rem]'>Zahlen-Fakten-Punkte-Tore</h1>
+
+          </div>
+          <div >
+            <Modale16/>
+            <h1 className='text-white text-[2.33rem]'>Die Bundesliga</h1>
+            <h1 className='text-white text-[1.33rem]'>Tabelle</h1>
+
+          </div>
+
         </div>
       </motion.div>
 
