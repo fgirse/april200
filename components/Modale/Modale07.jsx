@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic'
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 import Image from 'next/image';
-import Tooltip from 'react-simple-tooltip';
+import Tooltip from '../../utils/SimpleTooltip';
 import styles from '../../styles/Home.module.scss';
 
 
@@ -25,17 +25,19 @@ export default function Modale07() {
       <div className="inset-0 flex items-center justify-center">
         <div className="example-wrapper">
           <Tooltip
-            content="Click zu Weine"
+            content="Click zu Cocktails"
             direction="right"
           >
-            <button
-              type="button"
-              onClick={openModal}
-              className="mb-[3vw] w-60 rounded-md border bg-yellow-600 bg-opacity-80 px-4 py-2 text-[1.66rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-            >
-              Weine           
-               </button>
-          </Tooltip>
+         <Image
+            src="/Cocktailglas.svg"
+            width="180"
+            height="260"
+            alt="illustration cocktailglas"
+            onClick={(openModal)}
+            className ='cursor-pointer hover:bg-slate-700 hover:transform hover:translate-scale-150 hover:border-8 hover:border-red-500'/>
+      
+
+            </Tooltip>
         </div>
       </div>
 
@@ -64,10 +66,10 @@ export default function Modale07() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="border-gray-100 w-full max-w-7xl transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                   <Section>
         <Container>
-          <h1 className="mb-5 text-yellow-600 text-3xl text-center headingA">Weine</h1>
+          <h1 className="mb-5 text-yellow-600 text-3xl text-center headingA">Cocktails</h1>
        
 
            

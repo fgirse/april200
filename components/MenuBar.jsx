@@ -2,6 +2,7 @@
 
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Dropdown } from '../components/Dropdown';
 import {
   BookOpenIcon,
   ArrowCircleRightIcon,
@@ -121,8 +122,12 @@ export default function Example() {
                         src={user.imageUrl}
                         alt=""
                       />
+                      
                     </Menu.Button>
+
                   </div>
+                  <Dropdown/>
+                  
                   <Transition
                     as={Fragment}
                     enter="transition ease-out duration-100"

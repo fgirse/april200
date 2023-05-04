@@ -32,7 +32,9 @@
 }
 
 .app__specialMenu-menu_bierOffen,
-.app__specialMenu-menu_flaschenPost {
+.app__specialMenu-menu_flaschenPost
+.app__specialMenu-menu_weineWeiss
+.app__specialMenu-menu_weineRot {
     flex: 1;
     width: 100%;
     flex-direction: column;

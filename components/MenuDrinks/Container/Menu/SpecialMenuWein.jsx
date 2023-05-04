@@ -15,7 +15,7 @@ const SpecialMenuWein = () => (
       <h1 className="headtext__cormorant">Weine</h1>
     </div>
     <div className="app__specialMenu-menu">
-      <div className="app__specialMenu-menu_weineRot  flex__center">
+      <div className="app__specialMenu-menu_weineWeiss  flex__center">
         <p className="app__specialMenu-menu_heading">Weine weiss</p>
         <div className="app__specialMenu_menu_items">
           {data.weineWeiss.map((weineWeiss, index) => (

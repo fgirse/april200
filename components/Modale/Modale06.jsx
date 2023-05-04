@@ -47,7 +47,7 @@ export default function Modale06 () {
             alt="illustration astrabierglas"
             onClick={(openModal)}
             curser = "grab"
-          />
+            className ='cursor-pointer hover:bg-slate-700 hover:transform hover:translate-scale-150 hover:border-8 hover:border-red-500'/>
       
 
             </Tooltip>
@@ -90,8 +90,7 @@ export default function Modale06 () {
         </div>
          
       </Container>
-      <ScrollToTop className='bg-transparent text-white text-3xl'/>
-    </Section>
+      </Section>
                     
   
                     <div className="mt-4">

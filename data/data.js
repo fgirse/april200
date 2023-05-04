@@ -85,7 +85,7 @@ const biereOffen = [
       {
         title: 'Weizen dunkel',
         price: 'Euro 3.30',
-        tags: 'Flasche | das Kultbier',
+        tags: 'Flasche | 50cl',
       },
       {
         title: 'Kristallweizen',
@@ -113,59 +113,46 @@ const biereOffen = [
 
 const weineWeiss = [
   {
-    title: 'Chapel Hill Shiraz',
-    price: '$56',
-    tags: 'AU | Bottle',
+    title: 'Gutedel',
+    price: 'Euro 4.50',
+    tags: 'offen| 25 cl',
+  },
+  
+  {
+    title: 'Weisser Burgunder',
+    price: 'Euro 5.30',
+    tags: 'offen | 25cl',
   },
   {
-    title: 'Catena Malbee',
-    price: '$59',
-    tags: 'AU | Bottle',
+    title: 'Grauer Bugunder',
+    price: 'Euro 5.30',
+    tags: 'offen | 25cl',
   },
   {
-    title: 'La Vieillw Rose',
-    price: '$44',
-    tags: 'FR | 750 ml',
+    title: 'Weinschorle',
+    price: 'Euro 3.30',
+    tags: 'Gutedel-Mineralwasser | 25cl',
   },
   {
-    title: 'Rhino Pale Ale',
-    price: '$31',
-    tags: 'CA | 750 ml',
-  },
-  {
-    title: 'Irish Guinness',
-    price: '$26',
-    tags: 'IE | 750 ml',
+    title: 'Weisburgunder Sekt',
+    price: 'Euro 3.90',
+    tags: 'Schaumwein | 10cl'
   },
 ];
 
 const weineRot = [
   {
-    title: 'Chapel Hill Shiraz',
-    price: '$56',
-    tags: 'AU | Bottle',
+    title: 'Gutedel rot',
+    price: 'Euro 4.50',
+    tags: 'offen| 25 cl',
   },
   {
-    title: 'Catena Malbee',
-    price: '$59',
-    tags: 'AU | Bottle',
+    title: 'Spätburgunder Rose',
+    price: 'Euro 5.50',
+    tags: 'offen | 25cl',
   },
-  {
-    title: 'La Vieillw Rose',
-    price: '$44',
-    tags: 'FR | 750 ml',
-  },
-  {
-    title: 'Rhino Pale Ale',
-    price: '$31',
-    tags: 'CA | 750 ml',
-  },
-  {
-    title: 'Irish Guinness',
-    price: '$26',
-    tags: 'IE | 750 ml',
-  },
-];
+  
+  ];
 
 const cocktails = [
   {

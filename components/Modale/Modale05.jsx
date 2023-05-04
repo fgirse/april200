@@ -10,7 +10,7 @@ import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import Tooltip from '../../utils/SimpleTooltip';
 import { SpecialMenu } from '../../components/MenuDrinks/Container/';
-import ScrollToTop from '../ScrollToTopButton'
+
 
 export default function Modale05 () {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +21,7 @@ export default function Modale05 () {
   
     function openModal() {
       setIsOpen(true);
+      $("#Modal05").scrollTop(0);
     }
   
     return (
@@ -29,25 +30,17 @@ export default function Modale05 () {
           <div className="example-wrapper">
             <Tooltip
               content="Click zu Biere"
-              direction="top"
+              direction="right"
             >
-              {/*{<button
-                type="button"
-                onClick={openModal}
-                className="mb-[3vw] w-60 rounded-md border bg-yellow-600 bg-opacity-80 px-4 py-2 text-[1.66rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-              >
-                Biere           
-              </button>*/}
-
-      
+             
           <Image
             src="/astrabierglas.png"
-            width="200"
-            height="300"
+            width="300"
+            height="400"
             alt="illustration astrabierglas"
             onClick={(openModal)}
-            curser = "grab"
-          />
+
+            className ='cursor-pointer hover:bg-slate-700 hover:transform hover:translate-scale-150 hover:border-8 hover:border-red-500'/>
       
 
             </Tooltip>
@@ -80,7 +73,7 @@ export default function Modale05 () {
                   leaveTo="opacity-0 scale-95"
                 >
 
-        <Dialog.Panel className="border-yellow-600 w-full max-w-6xl transform overflow-hidden rounded-2xl border-8 bg-[#0C0C0C] p-2 text-left align-middle shadow-xl transition-all">
+        <Dialog.Panel id="Modale05" className="border-yellow-600 w-full max-w-6xl transform overflow-hidden rounded-2xl border-8 bg-[#0C0C0C] p-2 text-left align-middle shadow-xl transition-all">
             <Section>
       <Container>
         <div className='11/12 flex flex-col items-center justify-center'>
@@ -90,7 +83,7 @@ export default function Modale05 () {
         </div>
          
       </Container>
-      <ScrollToTop className='bg-transparent text-white text-3xl'/>
+      
     </Section>
                     
   

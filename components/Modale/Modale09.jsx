@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic'
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 import Image from 'next/image';
-import Tooltip from 'react-simple-tooltip';
+import Tooltip from '../../utils/SimpleTooltip';
 import styles from '../../styles/Home.module.scss';
 
 
@@ -28,14 +28,17 @@ export default function Modale09() {
             content="Click zu Kurze"
             direction="right"
           >
-            <button
-              type="button"
-              onClick={openModal}
-              className="mb-[3vw] w-60 rounded-md border bg-yellow-600 bg-opacity-80 px-4 py-2 text-[1.66rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-            >
-              Kurze           
-               </button>
-          </Tooltip>
+            <Image
+            src="/astrabierglas.png"
+            width="200"
+            height="300"
+            alt="illustration astrabierglas"
+            onClick={(openModal)}
+            curser = "grab"
+            className ='cursor-pointer hover:bg-slate-700 hover:transform hover:translate-scale-150 hover:border-8 hover:border-red-500'/>
+      
+
+            </Tooltip>
         </div>
       </div>
 

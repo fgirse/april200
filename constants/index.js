@@ -52,7 +52,7 @@ export const newFeatures = [
 
 export const insights = [
   {
-    imgUrl: '/arrow.svg',
+    imgUrl: '/Arrowhd.svg',
     title: 'Wähle eines der Menusymbole',
     subtitle:'',
   },
