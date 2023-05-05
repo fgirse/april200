@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import React from 'react';
-import Tooltip from 'react-simple-tooltip';
+import Tooltip from "../utils/SimpleTooltip";
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import { TypingText } from "../components";

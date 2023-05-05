@@ -1,10 +1,10 @@
 import { Footer, InfoBar ,MenuBar } from '../components';
 import { About, Philosophy, Wohin, Event, Hero, Drinks, Team, Sportarena, World } from '../sections';
-
+import { NavTest } from '../utils'
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden flex-col">
-    <MenuBar />
+    <NavTest />
   
     <InfoBar/> 
     <div className='flex-grow'>

@@ -4,8 +4,7 @@ import dynamic from 'next/dynamic'
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 import Image from 'next/image';
-import Tooltip from 'react-simple-tooltip';
-
+import Tooltip from "../../utils/SimpleTooltip";
 
 export default function Modale04() {  
   const [isOpen, setIsOpen] = useState(false);

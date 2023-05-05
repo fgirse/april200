@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { Dialog, Transition } from '@headlessui/react';
-import { Fragment, useState } from 'react';
-import Image from 'next/image';
-import Tooltip from 'react-simple-tooltip';
+import { Dialog, Transition } from "@headlessui/react";
+import { Fragment, useState } from "react";
+import Image from "next/image";
+import Tooltip from "../../utils/SimpleTooltip";
 
 export default function Modal01() {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,7 +77,7 @@ export default function Modal01() {
                         layout="responsive"
                       />
                       <h1 className="mt-2 mb-2 text-center text-xs text-gray-100">
-                        Illustration Altstadt Freiburg{' '}
+                        Illustration Altstadt Freiburg{" "}
                       </h1>
                     </div>
                   </div>

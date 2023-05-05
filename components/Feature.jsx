@@ -57,8 +57,8 @@ function Example() {
             ständig zu verbessern ! Sollten Sie einen besonderen Wunsch haben -
             sprechen Sie uns an ! Wir werden versuchen Ihre Anliegen umzusetzen.
           </p>
-          <div className="mt-12">
-            <dl className="space-y-10 md-grid md:grid-cols-2 lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+          <div className="mt-12 flex flex-col items-center justify-center ">
+            <dl className="space-y-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 lg:space-y-0">
               {features.map((feature) => (
                 <div key={feature.name}>
                   <dt>
