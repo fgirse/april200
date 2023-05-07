@@ -54,13 +54,8 @@ const people = [
 
 export default function Example() {
   return (
-    <section id="section-team" className="mt-[24vh]   bg-gradient-to-b from-[#1A232E] to-[#1A232E] lg.
-    
-    
-    
-    
-    
-    lg:bg-[length:100vw_15vh] lg:bg-center lg:bg-no-repeat">
+    <section id="section-team" className="mt-[24vh] bg-gradient-to-b from-[#1A232E] to-[#1A232E] lg.
+     lg:bg-[length:100vw_15vh] lg:bg-center lg:bg-no-repeat">
       <div className="py- mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8 lg:py-20">
         <div className="space-y-5 sm:space-y-1">
           <div className="space-y-3 sm:mx-auto sm:max-w-xl lg:max-w-5xl">

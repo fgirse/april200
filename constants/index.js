@@ -52,10 +52,13 @@ export const newFeatures = [
 
 export const insights = [
   {
-    imgUrl: '/Arrowhd.svg',
-    title: 'Wähle eines der Menusymbole',
+    imgUrl: '/arrowhd500.png',
+    title: 'Wähle eines der Symbole',
     subtitle:'',
   },
+
+
+  
  
 ];
 

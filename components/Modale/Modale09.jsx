@@ -25,20 +25,21 @@ export default function Modale09() {
       <div className="inset-0 flex items-center justify-center">
         <div className="example-wrapper">
           <Tooltip
-            content="Click zu Kurze"
-            direction="right"
+            content="Click zu Softdrinks"
+            direction="bottom"
           >
             <Image
             src="/astrabierglas.png"
             width="200"
             height="300"
-            alt="illustration astrabierglas"
+            alt="illustration softgetränke"
             onClick={(openModal)}
             curser = "grab"
-            className ='cursor-pointer hover:bg-slate-700 hover:transform hover:translate-scale-150 hover:border-8 hover:border-red-500'/>
+            className ='cursor-pointer hover:bg-slate-700 hover:transform hover:scale-110 hover:border hover:rounded-full'/>
       
 
             </Tooltip>
+            <h1 className="text-center text-2xl text-gray-50">Softdrinks</h1>
         </div>
       </div>
 

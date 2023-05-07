@@ -103,4 +103,16 @@ input:-webkit-autofill:focus {
   font-weight: extrabold;
 }
 
+.contdrinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 5px;
+  
+}
 
+.item {
+  background: yellow;
+  text-align: center;
+  border: 1px solid red;
+}

@@ -20,24 +20,29 @@ export default function Modale07() {
     setIsOpen(true);
   }
 
+  function scrollView() {
+    const Modale05 = document.getElementById("Modale07");
+    Modale07.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  }
+
   return (
     <>
       <div className="inset-0 flex items-center justify-center">
         <div className="example-wrapper">
           <Tooltip
-            content="Click zu Cocktails"
+            content="Click zu Longdrinks"
             direction="right"
           >
          <Image
-            src="/Cocktailglas.svg"
+            src="/Cocktail500.png"
             width="180"
             height="260"
             alt="illustration cocktailglas"
             onClick={(openModal)}
-            className ='cursor-pointer hover:bg-slate-700 hover:transform hover:translate-scale-150 hover:border-8 hover:border-red-500'/>
-      
+            className ='cursor-pointer hover:rounded-full hover:bg-slate-700 hover:border hover:transform hover:scale-110'/>
 
-            </Tooltip>
+                 </Tooltip>
+                 <h1 className="text-center text-2xl text-gray-50">Longdrinks</h1>
         </div>
       </div>
 
@@ -67,7 +72,7 @@ export default function Modale07() {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="border-gray-100 w-full max-w-7xl transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
-                  <Section>
+                  <Section id='Modale07'>
         <Container>
           <h1 className="mb-5 text-yellow-600 text-3xl text-center headingA">Cocktails</h1>
        

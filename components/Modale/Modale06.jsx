@@ -22,7 +22,12 @@ export default function Modale06 () {
     function openModal() {
       setIsOpen(true);
     }
-  
+    
+    function scrollView() {
+      const Modale06 = document.getElementById("Modale06");
+      Modale05.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    }
+
     return (
       <>
         <div className="inset-0 flex items-center justify-center">
@@ -41,16 +46,17 @@ export default function Modale06 () {
 
       
           <Image
-            src="/bottles03.png"
+            src="/bottles500.png"
             width="200"
             height="300"
-            alt="illustration astrabierglas"
+            alt="illustration weinflschen"
             onClick={(openModal)}
             curser = "grab"
-            className ='cursor-pointer hover:bg-slate-700 hover:transform hover:translate-scale-150 hover:border-8 hover:border-red-500'/>
+            className ='cursor-pointer hover:rounded-full hover:bg-slate-700 hover:border hover:transform hover:scale-110 '/>
       
 
             </Tooltip>
+            <h1 className="mt-[1vh] text-center text-2xl text-gray-50">Weine</h1>
           </div>
         </div>
   

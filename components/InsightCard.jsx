@@ -16,7 +16,7 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
     />
     <div className="w-full flex justify-between items-center">
       <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px]">
-        <h4 className="font-normal lg:text-[2rem] text-[2rem] text-yellow-500 text-center">
+        <h4 className="font-normal lg:text-[3.33rem] text-[2rem] text-grey-200 text-center">
           {title}
         </h4>
         <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] text-secondary-white">

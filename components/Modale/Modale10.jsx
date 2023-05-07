@@ -35,10 +35,11 @@ export default function Modale10() {
             alt="illustration astrabierglas"
             onClick={(openModal)}
             curser = "grab"
-            className ='cursor-pointer hover:bg-slate-700 hover:transform hover:translate-scale-150 hover:border-8 hover:border-red-500'/>
+            className ='cursor-pointer hover:rounded-full hover:bg-slate-700 hover:border hover:transform hover:scale-110 '/>
       
 
             </Tooltip>
+            <h1 className="mt-[1vh] text-center text-2xl text-gray-50">Snacks</h1>
         </div>
       </div>
 

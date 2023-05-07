@@ -21,16 +21,22 @@ export default function Modale05 () {
   
     function openModal() {
       setIsOpen(true);
-      $("#Modal05").scrollTop(0);
+     
+
     }
   
+    function scrollView() {
+      const Modale05 = document.getElementById("Modale05");
+      Modale05.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    }
+
     return (
       <>
         <div className="inset-0 flex items-center justify-center">
           <div className="example-wrapper">
             <Tooltip
               content="Click zu Biere"
-              direction="right"
+              direction="top"
             >
              
           <Image
@@ -40,10 +46,11 @@ export default function Modale05 () {
             alt="illustration astrabierglas"
             onClick={(openModal)}
 
-            className ='cursor-pointer hover:bg-slate-700 hover:transform hover:translate-scale-150 hover:border-8 hover:border-red-500'/>
+            className ='cursor-pointer rounded-full hover:bg-slate-700 hover:border hover:transform hover:scale-110 '/>
       
 
             </Tooltip>
+            <h1 className="mt-[1vh] text-center text-2xl text-gray-50">Biere</h1>
           </div>
         </div>
   
@@ -72,9 +79,9 @@ export default function Modale05 () {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
+        <Dialog.Panel className="border-yellow-600 w-full max-w-6xl transform overflow-hidden rounded-2xl border-8 bg-[#0C0C0C] p-2 text-left align-middle shadow-xl transition-all">
 
-        <Dialog.Panel id="Modale05" className="border-yellow-600 w-full max-w-6xl transform overflow-hidden rounded-2xl border-8 bg-[#0C0C0C] p-2 text-left align-middle shadow-xl transition-all">
-            <Section>
+            <Section id="Modale05" >
       <Container>
         <div className='11/12 flex flex-col items-center justify-center'>
         

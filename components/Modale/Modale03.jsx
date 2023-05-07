@@ -67,7 +67,7 @@ export default function Modale06() {
                 <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                   <Section>
         <Container>
-          <h1 className="mb-5 text-yellow-600 text-3xl text-center headingA">Softdrinks</h1>
+          
        
 
            

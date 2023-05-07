@@ -4,22 +4,23 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { SearchIcon } from '@heroicons/react/solid'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-
+import Image from 'next/image';
+import Bullauge from '../public/Bulleye.svg'
 const user = {
-  name: 'Tom Cook',
-  email: 'tom@example.com',
+  name: 'Franz Beckenbauer',
+  email: 'Kaiser@fc bayern münchen.com',
   imageUrl:
     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'über uns', href: '#section-about', current: false },
-  { name: 'Philosophie', href: '#philosophie', current: false },
-  { name: 'Features', href: '#features', current: false },
-  { name: 'Drinks &  Snacks', href: '#drinks', current: false },
-  { name: 'Events', href: '#events', current: false },
-  { name: 'Team', href: '#team', current: false },
-  { name: 'Wohin?', href: '#wohin', current: false },
+  { name: 'Philosophie', href: '#section-philosophie', current: false },
+  { name: 'Features', href: '#section-features', current: false },
+  { name: 'Drinks &  Snacks', href: '#section-drinks', current: false },
+  { name: 'Events', href: '#section-events', current: false },
+  { name: 'Team', href: '#section-team', current: false },
+  { name: 'Wohin?', href: '#section-wohin', current: false },
 ]
 const userNavigation = [
   { name: 'Your Profile', href: '#' },
@@ -80,7 +81,7 @@ export default function NavTest() {
               <div className="hidden lg:relative lg:z-10 lg:ml-4 lg:flex lg:items-center">
                 <button
                   type="button"
-                  className="bg-gray-800 flex-shrink-0 rounded-full p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  className="bg-gray-400 flex-shrink-0 rounded-full p-1 text-gray-50 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
@@ -89,7 +90,7 @@ export default function NavTest() {
                 {/* Profile dropdown */}
                 <Menu as="div" className="flex-shrink-0 relative ml-4">
                   <div>
-                    <Menu.Button className="bg-gray-800 rounded-full flex text-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                    <Menu.Button className="bg-red-600 rounded-full flex text-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <span className="sr-only">Open user menu</span>
                       <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
                     </Menu.Button>
@@ -130,12 +131,16 @@ export default function NavTest() {
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-green-600 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'rounded-md py-2 px-3 inline-flex items-center text-sm font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
+                  <div className='block text-center flex flex-col justify-center items-center text-red-500'>
+                    <Image src={Bullauge} className="hover:transform hover:translate-x-4" />
                   {item.name}
+                  </div>
+                  
                 </a>
               ))}
             </nav>
