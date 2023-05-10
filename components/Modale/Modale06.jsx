@@ -31,32 +31,17 @@ export default function Modale06 () {
     return (
       <>
         <div className="inset-0 flex items-center justify-center">
-          <div className="example-wrapper">
+        <div className=" example-wrapper">
             <Tooltip
               content="Click zu Weine"
               direction="right"
             >
-              {/*{<button
-                type="button"
-                onClick={openModal}
-                className="mb-[3vw] w-60 rounded-md border bg-yellow-600 bg-opacity-80 px-4 py-2 text-[1.66rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-              >
-                Biere           
-              </button>*/}
-
-      
-          <Image
-            src="/bottles500.png"
-            width="200"
-            height="300"
-            alt="illustration weinflschen"
-            onClick={(openModal)}
-            curser = "grab"
-            className ='cursor-pointer hover:rounded-full hover:bg-slate-700 hover:border hover:transform hover:scale-110 '/>
-      
-
+              <div className='w-60 h-60 bg-[url("/bottles500.png")] bg-no-repeat bg-cover'
+        
+        onClick={(openModal)}></div>
+      <div/>
             </Tooltip>
-            <h1 className="mt-[1vh] text-center text-2xl text-gray-50">Weine</h1>
+            
           </div>
         </div>
   

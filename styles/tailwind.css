@@ -103,16 +103,25 @@ input:-webkit-autofill:focus {
   font-weight: extrabold;
 }
 
-.contdrinks {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
-  grid-auto-rows: auto;
-  grid-gap: 5px;
-  
+.container-drinks {
+  display: grid; width: 100 vw;
+  grid-template-columns: repeat (3, auto));
+  grid-gap: 3vw;
+  border: solid 6px  ;
+  border-color: #ffffff;
 }
 
-.item {
-  background: yellow;
+.item-drinks {
   text-align: center;
-  border: 1px solid red;
+ background-color: skyblue;
+ aligne-self: stretch;
+ display: flex;
+	flex-direction: column;
+  border:.66rem solid #ffdd00
+}
+
+.container-drinks-img{
+  width: 100%;
+  display:block;
+  
 }

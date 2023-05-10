@@ -136,7 +136,7 @@ export default function NavTest() {
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
-                  <div className='block text-center flex flex-col justify-center items-center text-red-500'>
+                  <div className='block text-center flex flex-col justify-center items-center font-black text-gray-50 hover:text-gray-400'>
                     <Image src={Bullauge} className="hover:transform hover:translate-x-4" />
                   {item.name}
                   </div>

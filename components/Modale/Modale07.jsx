@@ -28,21 +28,17 @@ export default function Modale07() {
   return (
     <>
       <div className="inset-0 flex items-center justify-center">
-        <div className="example-wrapper">
+      <div className="example-wrapper">
           <Tooltip
             content="Click zu Longdrinks"
             direction="right"
           >
-         <Image
-            src="/Cocktail500.png"
-            width="180"
-            height="260"
-            alt="illustration cocktailglas"
-            onClick={(openModal)}
-            className ='cursor-pointer hover:rounded-full hover:bg-slate-700 hover:border hover:transform hover:scale-110'/>
-
-                 </Tooltip>
-                 <h1 className="text-center text-2xl text-gray-50">Longdrinks</h1>
+        <div className='w-60 h-60 bg-[url("/cocktail500.png")] bg-no-repeat bg-cover'
+        
+        onClick={(openModal)}></div>
+      <div/> 
+                             </Tooltip>
+                
         </div>
       </div>
 
@@ -74,7 +70,7 @@ export default function Modale07() {
                 <Dialog.Panel className="border-gray-100 w-full max-w-7xl transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                   <Section id='Modale07'>
         <Container>
-          <h1 className="mb-5 text-yellow-600 text-3xl text-center headingA">Cocktails</h1>
+          
        
 
            

@@ -52,9 +52,9 @@ export const newFeatures = [
 
 export const insights = [
   {
-    imgUrl: '/arrowhd500.png',
-    title: 'Wähle eines der Symbole',
-    subtitle:'',
+    imgUrl: '/arrow500hd.png',
+    title: 'Menue Auswahl',
+    subtitle:'Wähle eines der Getränke-Snack Menues in dem Du eine der Illustrationen anclickst ',
   },
 
 

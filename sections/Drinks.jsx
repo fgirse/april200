@@ -37,34 +37,41 @@ const Drinks = () => {
 <section className="flex flex-col items-center">
 {/*<div className="w-full h-full rounded-2xl bg-red-100/10 grid grid-cols-1 md:grid-cols-2 md:gap-x-5 md:gap-y-5 lg:grid-cols-3 2xl:grid-cols-4 ">*/}
 
-            <div className="contdrinks">
-         <div className="w-[20 vw] border-8">
-        <Modale05 />
+            <div className="gap-5 grid grid-cols-1 md:grid-cols-2  lg:container-drinks">
+         <div className="item-drinks">
+             <Modale05/>
          </div>
-        <div className="w-[20 vw] border-8">
+        
+         
+         <div className=" item-drinks">
         <Modale06  />
         
         </div>
-        <div className="w-[20 vw] border-8">
+        <div className="item-drinks">
+        
+         
         <Modale07  />
        
         </div>
-        <div className="w-[20 vw] border-8">
+        <div className="item-drinks">
 
-        <Modale08  />
+        <Modale08   />
+      
+        </div>
+        <div className="item-drinks">
+        <Modale09  />
         
         </div>
-        <div className="w-[20 vw] border-8">
-        <Modale09/>
+        <div className="item-drinks">
+ 
+         
+        <Modale10   />
         
         </div>
-        <div className="w-[20 vw] border-8">
 
-        <Modale10  />
-        
         </div>
-        </div>
-
+      
+         
 
 </section>
         

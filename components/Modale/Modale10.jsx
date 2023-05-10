@@ -23,23 +23,20 @@ export default function Modale10() {
   return (
     <>
       <div className="inset-0 flex items-center justify-center">
-        <div className="example-wrapper">
+      <div className="example-wrapper">
+        
           <Tooltip
             content="Click zu Snacks"
             direction="right"
           >
-           <Image
-            src="/astrabierglas.png"
-            width="200"
-            height="300"
-            alt="illustration astrabierglas"
-            onClick={(openModal)}
-            curser = "grab"
-            className ='cursor-pointer hover:rounded-full hover:bg-slate-700 hover:border hover:transform hover:scale-110 '/>
+           <div className='w-60 h-60 bg-[url("/Astraballons.png")] bg-no-repeat bg-cover'
+        
+        onClick={(openModal)}></div>
+      <div/>
       
 
             </Tooltip>
-            <h1 className="mt-[1vh] text-center text-2xl text-gray-50">Snacks</h1>
+            
         </div>
       </div>
 
@@ -71,7 +68,7 @@ export default function Modale10() {
                 <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                   <Section>
         <Container>
-          <h1 className="mb-5 text-yellow-600 text-3xl text-center headingA">Snacks</h1>
+          <h1 className=""></h1>
        
 
            

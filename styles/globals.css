@@ -375,20 +375,4 @@ input:-webkit-autofill:focus {
     border: 2px solid black;
     width: 45%;
     margin: 1.66%;
-     
-
-    .contdrinks {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      grid-auto-rows: 200px;
-      grid-gap: 5px;
-      background-color: #ffffff;
-    }
-    
-    .item {
-      background: yellow;
-      text-align: center;
-      border: 1px solid red;
-    }
-
-}
+       }

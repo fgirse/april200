@@ -28,18 +28,15 @@ export default function Modale08() {
             content="Click zu Kurze"
             direction="top"
           >
-           <Image
-            src="/tequila500.png"
-            width="200"
-            height="300"
-            alt="illustration cocktail"
-            onClick={(openModal)}
-            curser = "grab"
-            className ='cursor-pointer hover:bg-slate-700 hover:transform hover:translate-scale-150 hover:border-8 hover:border-red-500'/>
+           
+         <div/><div className='w-60 h-60 bg-[url("/tequila500.png")] bg-no-repeat bg-cover'
+        
+            onClick={(openModal)}></div>
+          <div/>
       
 
             </Tooltip>
-            <h1 className="text-center text-2xl text-gray-50">Longdrinks</h1>
+          
         </div>
       </div>
 
@@ -71,7 +68,7 @@ export default function Modale08() {
                 <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                   <Section>
         <Container>
-          <h1 className="mb-5 text-yellow-600 text-3xl text-center headingA">Longdrinks</h1>
+          
        
 
            

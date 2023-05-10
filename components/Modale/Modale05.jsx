@@ -30,28 +30,24 @@ export default function Modale05 () {
       Modale05.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
     }
 
+     
+
     return (
       <>
         <div className="inset-0 flex items-center justify-center">
           <div className="example-wrapper">
-            <Tooltip
+                      <Tooltip
               content="Click zu Biere"
               direction="top"
             >
              
-          <Image
-            src="/astrabierglas.png"
-            width="300"
-            height="400"
-            alt="illustration astrabierglas"
-            onClick={(openModal)}
-
-            className ='cursor-pointer rounded-full hover:bg-slate-700 hover:border hover:transform hover:scale-110 '/>
-      
+          <div className='w-60 h-60 bg-[url("/astrabierglas.png")] bg-no-repeat bg-cover'
+        
+            onClick={(openModal)}></div>
+          <div/>
 
             </Tooltip>
-            <h1 className="mt-[1vh] text-center text-2xl text-gray-50">Biere</h1>
-          </div>
+            </div>
         </div>
   
         <Transition appear show={isOpen} as={Fragment}>

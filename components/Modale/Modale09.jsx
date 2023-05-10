@@ -23,24 +23,18 @@ export default function Modale09() {
   return (
     <>
       <div className="inset-0 flex items-center justify-center">
-        <div className="example-wrapper">
+      <div className="example-wrapper">
           <Tooltip
             content="Click zu Softdrinks"
             direction="bottom"
           >
-            <Image
-            src="/astrabierglas.png"
-            width="200"
-            height="300"
-            alt="illustration softgetränke"
-            onClick={(openModal)}
-            curser = "grab"
-            className ='cursor-pointer hover:bg-slate-700 hover:transform hover:scale-110 hover:border hover:rounded-full'/>
-      
+            <div className='w-60 h-60 bg-[url("/Astraballons.png")] bg-no-repeat bg-cover'
+        
+        onClick={(openModal)}></div>
+      <div/>
 
             </Tooltip>
-            <h1 className="text-center text-2xl text-gray-50">Softdrinks</h1>
-        </div>
+                    </div>
       </div>
 
       <Transition appear show={isOpen} as={Fragment}>
@@ -69,16 +63,8 @@ export default function Modale09() {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
-                  <Section>
-        <Container>
-          <h1 className="mb-5 text-yellow-600 text-3xl text-center headingA">Kurze</h1>
-       
-
-           
-        </Container>
-      </Section>
-                          <div className="mt-4">
-                    <button
+                <div className="example-wrapper">
+                   <button
                       type="button"
                       className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={closeModal}
@@ -92,6 +78,7 @@ export default function Modale09() {
           </div>
         </Dialog>
       </Transition>
+    
     </>
   );
 }
