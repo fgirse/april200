@@ -14,10 +14,10 @@ const user = {
 }
 const navigation = [
   { name: 'Home', href: '#', current: true },
-  { name: 'über uns', href: '#section-about', current: false },
+  { name: 'Über uns', href: '#section-about', current: false },
   { name: 'Philosophie', href: '#section-philosophie', current: false },
   { name: 'Features', href: '#section-features', current: false },
-  { name: 'Drinks &  Snacks', href: '#section-drinks', current: false },
+  { name: 'Drinks&Snacks', href: '#section-drinks', current: false },
   { name: 'Events', href: '#section-events', current: false },
   { name: 'Team', href: '#section-team', current: false },
   { name: 'Wohin?', href: '#section-wohin', current: false },
@@ -49,6 +49,7 @@ export default function NavTest() {
                 </div>
               </div>
               <div className="relative z-0 flex-1 px-2 flex items-center justify-center sm:absolute sm:inset-0">
+             
                 <div className="w-full sm:max-w-xs">
                   <label htmlFor="search" className="sr-only">
                     Search
@@ -112,7 +113,7 @@ export default function NavTest() {
                               href={item.href}
                               className={classNames(
                                 active ? 'bg-gray-100' : '',
-                                'block py-2 px-4 text-sm text-gray-700'
+                                'block py-2 px-4 text-sm text-green-700'
                               )}
                             >
                               {item.name}
@@ -125,22 +126,20 @@ export default function NavTest() {
                 </Menu>
               </div>
             </div>
-            <nav className="hidden lg:py-2 lg:flex lg:space-x-8" aria-label="Global">
+            <nav className="hidden lg:py-2 lg:flex lg:space-x-8 lg:nav-grid" aria-label="Global">
               {navigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-green-600 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'rounded-md py-2 px-3 inline-flex items-center text-sm font-medium'
+                  className={classNames(item.current ? 'bg-black-600/50 text-yellow-500' : 'text-gray-900 hover:bg-gray-50 hover:text-gray-900',
+                    'rounded-md py-2 px-3 inline-flex items-center text-md font-black'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
-                  <div className='block text-center flex flex-col justify-center items-center font-black text-gray-50 hover:text-gray-400'>
-                    <Image src={Bullauge} className="hover:transform hover:translate-x-4" />
+                  <div className='flex flex-row justify-center items-center font-black text-gray-50'>
+                  <img src="/Bulleye.svg" height="44" width="44" className="hover:transform hover:scale-150" alt="Bullauge"/>
                   {item.name}
                   </div>
-                  
                 </a>
               ))}
             </nav>
@@ -154,7 +153,7 @@ export default function NavTest() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-red-900 text-green' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block rounded-md py-2 px-3 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
@@ -181,7 +180,7 @@ export default function NavTest() {
                 </button>
               </div>
               <div className="mt-3 px-2 space-y-1">
-              <Image src="/Bulleye.svg" width="40" height="40" alt="Bulleye" className="hover:transformation scale-150"/>
+
                 {userNavigation.map((item) => (
                   <Disclosure.Button
                     key={item.name}

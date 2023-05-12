@@ -103,6 +103,12 @@ input:-webkit-autofill:focus {
   font-weight: extrabold;
 }
 
+.navgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+    grid-gap: 2vw;
+  }
+
 .container-drinks {
   display: grid; width: 100 vw;
   grid-template-columns: repeat (3, auto));
@@ -112,16 +118,16 @@ input:-webkit-autofill:focus {
 }
 
 .item-drinks {
+  width: 20 vw;
   text-align: center;
- background-color: skyblue;
- aligne-self: stretch;
- display: flex;
-	flex-direction: column;
-  border:.66rem solid #ffdd00
+  background-color: rgb(0, 0, 0);
+  border:.5rem solid #ffdd00;
+  border-radius: 1rem;
 }
 
 .container-drinks-img{
   width: 100%;
   display:block;
+  object-fit: cover;
   
 }
