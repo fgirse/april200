@@ -1,7 +1,7 @@
 import { Footer, InfoBar ,MenuBar } from '../components';
 import { About, Philosophy, Wohin, Event, Hero, Drinks, Team, Sportarena, World } from '../sections';
 import { NavTest } from '../utils'
-
+import ScrollToTop from'../components/ScrollToTopButton';
 const Page = () => (
   <div className="bg-primary-black overflow-hidden flex-col">
     <NavTest />
@@ -26,6 +26,7 @@ const Page = () => (
       <Wohin />
     </div>
     </div>
+    <ScrollToTop className="fixed bottom-10 right-50"/>
     <Footer />
   </div>
 );

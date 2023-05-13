@@ -112,15 +112,13 @@ input:-webkit-autofill:focus {
 .container-drinks {
   display: grid; width: 100 vw;
   grid-template-columns: repeat (3, auto));
-  grid-gap: 3vw;
-  border: solid 6px  ;
-  border-color: #ffffff;
+  grid-gap: 2vw;
 }
 
 .item-drinks {
   width: 20 vw;
   text-align: center;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(148, 163, 184);
   border:.5rem solid #ffdd00;
   border-radius: 1rem;
 }
