@@ -6,7 +6,7 @@ import styles from '../styles';
 import { startingFeatures } from '../constants';
 import { StartSteps, TitleText, TypingText } from '../components';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
-import  ScrollToTopButton from '../components/ScrollToTopButton'
+import  ScrollToTop from '../components/BackToTop/ScrollToTop.js'
 const Event = () => (
   <section id="section-events" className={`${styles.paddings} relative z-10`}>
     <motion.div

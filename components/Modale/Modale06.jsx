@@ -10,7 +10,7 @@ import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import Tooltip from '../../utils/SimpleTooltip';
 import { SpecialMenuWein } from '../../components/MenuDrinks/Container/';
-import ScrollToTop from '../ScrollToTopButton'
+import ScrollToTop from '../BackToTop/ScrollToTop'
 
 export default function Modale06 () {
     const [isOpen, setIsOpen] = useState(false);

@@ -1,11 +1,12 @@
 import { Footer, InfoBar ,MenuBar } from '../components';
 import { About, Philosophy, Wohin, Event, Hero, Drinks, Team, Sportarena, World } from '../sections';
 import { NavTest } from '../utils'
-import ScrollToTop from'../components/ScrollToTopButton';
+import ScrollToTop, { ScrollTop } from'../components/BackToTop/ScrollToTop.js';
 const Page = () => (
+  <>
+
   <div className="bg-primary-black overflow-hidden flex-col">
-    <NavTest />
-  
+    <NavTest />  
     <InfoBar/> 
     <div className='flex-grow'>
     <Hero />
@@ -25,9 +26,11 @@ const Page = () => (
       <div className="gradient-04 z-0"></div>
       <Wohin />
     </div>
-    </div>
-    <ScrollToTop className="fixed bottom-10 right-50"/>
+    <ScrollToTop/>
+     </div>
+   
     <Footer />
   </div>
+  </>
 );
 export default Page
