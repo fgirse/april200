@@ -1,11 +1,10 @@
 "use client";
 
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { SearchIcon } from '@heroicons/react/solid'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import Image from 'next/image';
-import Bullauge from '../public/Bulleye.svg'
+import { Fragment } from 'react';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { SearchIcon } from '@heroicons/react/solid';
+import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+
 const user = {
   name: 'Franz Beckenbauer',
   email: 'Kaiser@fc bayern münchen.com',
@@ -15,7 +14,7 @@ const user = {
 const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'Über uns', href: '#section-about', current: false },
-  { name: 'Philosophie', href: '#section-philosophie', current: false },
+  { name: 'Philosophie', href: '#section-philosophy', current: false },
   { name: 'Features', href: '#section-features', current: false },
   { name: 'Drinks&Snacks', href: '#section-drinks', current: false },
   { name: 'Events', href: '#section-events', current: false },
@@ -73,9 +72,9 @@ export default function NavTest() {
                 <Disclosure.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open menu</span>
                   {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XIcon className="bg-red-500 rounded-full block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    <MenuIcon className="text-yellow-600 block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
@@ -136,7 +135,7 @@ export default function NavTest() {
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
-                  <div className='flex flex-row justify-center items-center font-black text-gray-50'>
+                  <div className='flex flex-row justify-center items-center font-black text-gray-50 hover:bg-black'>
                   <img src="/Bulleye.svg" height="44" width="44" className="hover:transform hover:scale-150" alt="Bullauge"/>
                   {item.name}
                   </div>

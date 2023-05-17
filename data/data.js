@@ -154,7 +154,7 @@ const weineRot = [
   
   ];
 
-const cocktails = [
+const longDrinks = [
   {
     title: 'Aperol Sprtiz',
     price: '$20',
@@ -182,7 +182,7 @@ const cocktails = [
   },
 ];
 
-const longDrinks = [
+const cocktails = [
     {
       title: 'Aperol Sprtiz',
       price: '$20',
@@ -266,6 +266,34 @@ const longDrinks = [
     },
   ];
 
+  const likoere = [
+    {
+      title: 'Aperol Sprtiz',
+      price: '$20',
+      tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
+    },
+    {
+      title: "Dark 'N' Stormy",
+      price: '$16',
+      tags: 'Dark rum | Ginger beer | Slice of lime',
+    },
+    {
+      title: 'Daiquiri',
+      price: '$10',
+      tags: 'Rum | Citrus juice | Sugar',
+    },
+    {
+      title: 'Old Fashioned',
+      price: '$31',
+      tags: 'Bourbon | Brown sugar | Angostura Bitters',
+    },
+    {
+      title: 'Negroni',
+      price: '$26',
+      tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
+    },
+  ];
+
   const snacks = [
     {
       title: 'Elsässer Flammkuchen klassisch',
@@ -285,6 +313,32 @@ const longDrinks = [
     
  
   ];
+ 
+  const warmgetränke = [
+    {
+      title: 'Cafe Creme',
+      price: 'Euro 3.50',
+      tags: ' | Tasse | ',
+    },
+    {
+        title: 'Capuccino',
+        price: 'Euro 3.90',
+        tags: ' | Tasse ',
+    },
+    {
+        title: 'Espresso',
+        price: 'Euro 2.50',
+        tags: ' | Tasse',
+    },
+    {
+      title: 'Tee',
+      price: 'Euro 2.90',
+      tags: ' | Tasse  | Earl Gray  | Minze ',
+  },
+    
+ 
+  ];
+
 
 const awards = [
   {
@@ -309,4 +363,4 @@ const awards = [
   },
 ];
 
-export default { biereOffen, flaschenPost, weineWeiss, weineRot, cocktails, longDrinks, softDrinks, kurze, snacks };
+export default { biereOffen, flaschenPost, weineWeiss, weineRot, cocktails, longDrinks, softDrinks, kurze, snacks, likoere };

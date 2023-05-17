@@ -25,47 +25,45 @@ export default function Modale06 () {
     
     function scrollView() {
       const Modale06 = document.getElementById("Modale06");
-      Modale05.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+      Modale06.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }
 
     return (
       <>
         <div className="inset-0 flex items-center justify-center">
-        <div className=" example-wrapper">
-            <Tooltip
-              content="Click zu Weine"
-              direction="right"
-            >
-           <div  onClick={(openModal)} className="group relative block bg-black">
+          <div className="example-wrapper">
+                      
+             
+             <div  onClick={(openModal)} className="group relative block">
          
-         <img
-           alt="Developer"
-           src="Bottles500.png"
-           className="absolute inset-0 h-full w-full object-contain opacity-75 transition-opacity group-hover:opacity-50"
-         />
-       
-         <div className="relative p-4 sm:p-6 lg:p-8">
-           <p className="text-sm font-medium uppercase tracking-widest text-yellow-600">
-             menu - karte
-           </p>
-       
-           <p className="text-xl font-bold text-white sm:text-5xl">Weine</p>
-       
-           <div className="mt-32 sm:mt-48 lg:mt-64">
-             <div
-               className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
-             >
-               <p className="text-sm text-white">
-                 click mich!
-               </p>
-             </div>
-           </div>
-         </div>
-        
-       </div>
-            </Tooltip>
+             
+  <img
+    alt="weine"
+    src="Bottles.png"
+    className="absolute inset-0 h-full w-full object-contain opacity-75 transition-opacity group-hover:opacity-50"
+  />
+
+  <div className="relative p-4 sm:p-6 lg:p-8">
+    <p className="text-sm font-medium uppercase tracking-widest text-yellow-600">
+      menue - drinks
+    </p>
+
+    <p className="text-xl font-bold text-white sm:text-3xl">Weine</p>
+
+    <div className="mt-32 sm:mt-48 lg:mt-64">
+      <div
+        className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+      >
+        <p className="bg-yellow-600 rounded-2xl text-xl text-center text-white">
+          click mich!!!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
             
-          </div>
+            </div>
         </div>
   
         <Transition appear show={isOpen} as={Fragment}>

@@ -4,15 +4,14 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Features from'../components/Feature';
 import styles from '../styles';
-import { exploreWorlds } from '../constants';
 import { staggerContainer } from '../utils/motion';
-import { ExploreCard, TitleText, TypingText } from '../components';
+import { TypingText } from '../components';
 
-const Explore = () => {
+const Philosophy = () => {
   const [active, setActive] = useState('world-2');
 
   return (
-    <section className={`${styles.paddings} `} id="explore">
+    <section className={`${styles.paddings} `} id="section-philosophy">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -27,4 +26,4 @@ const Explore = () => {
   );
 };
 
-export default Explore;
+export default Philosophy;

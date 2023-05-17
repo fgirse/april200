@@ -17,6 +17,7 @@ const Page = () => (
     </div>
     <div className="relative">
       <Drinks />
+      <ScrollToTop/>
       <div className="gradient-04 z-0"></div>
       <Event />
     </div>
@@ -26,7 +27,7 @@ const Page = () => (
       <div className="gradient-04 z-0"></div>
       <Wohin />
     </div>
-    <ScrollToTop/>
+    <ScrollToTop/>    
      </div>
    
     <Footer />

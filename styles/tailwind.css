@@ -109,23 +109,42 @@ input:-webkit-autofill:focus {
     grid-gap: 2vw;
   }
 
-.container-drinks {
-  display: grid; width: 100 vw;
-  grid-template-columns: repeat (3, auto));
-  grid-gap: 2vw;
+  .grid-container {
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  .col{
+    flex: 100%;
+
+    @media only screen and (min-width: 31.375em)
+    {flex: 50%}
+
+    @media only screen and (min-width: 48em)
+    {flex: 33.3333%}
+  }
+
+  .grid-item  {
+    padding: 1rem;
+  }
+
+.modale{
+ width: 100%;
+ height: 15.625rem;
+ object-fit: cover;
+ object-position: 50% 50%;
+
+ @media only screen and (min-width: 31.375em){
+ //height: 25rem;
+ }
+
+ @media only screen and (min-width: 81.25em){ 
+ height: 25rem;
+ }
+
+
 }
 
-.item-drinks {
-  width: 20 vw;
-  text-align: center;
-  background-color: rgb(148, 163, 184);
-  border:.5rem solid #ffdd00;
-  border-radius: 1rem;
-}
 
-.container-drinks-img{
-  width: 100%;
-  display:block;
-  object-fit: cover;
-  
-}

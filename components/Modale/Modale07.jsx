@@ -8,7 +8,7 @@ import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import Tooltip from '../../utils/SimpleTooltip';
 import styles from '../../styles/Home.module.scss';
-
+import { SpecialMenuLongDrink } from '../../components/MenuDrinks/Container/';
 
 export default function Modale07() {  
   const [isOpen, setIsOpen] = useState(false);
@@ -21,49 +21,46 @@ export default function Modale07() {
   }
 
   function scrollView() {
-    const Modale05 = document.getElementById("Modale07");
+    const Modale07 = document.getElementById("Modale07");
     Modale07.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
   }
 
   return (
     <>
       <div className="inset-0 flex items-center justify-center">
-      <div className="example-wrapper">
-          <Tooltip
-            content="Click zu Longdrinks"
-            direction="right"
-          >
-           <div  onClick={(openModal)} className="group relative block bg-">
-         
-         <img
-           alt="Cocktail"
-           src="cocktailglas300.png"
-           className="absolute inset-0 h-full w-full object-contain
-            opacity-75 transition-opacity group-hover:opacity-50"
-         />
+        <div className="example-wrapper">
+                    
+           
+           <div  onClick={(openModal)} className="group relative block">
        
-         <div className="relative p-4 sm:p-6 lg:p-8">
-           <p className="text-sm font-medium uppercase tracking-widest text-yellow-600">
-             menu - karte
-           </p>
-       
-           <p className="text-xl font-bold text-white sm:text-5xl">Longdrinks</p>
-       
-           <div className="mt-32 sm:mt-48 lg:mt-64">
-             <div
-               className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
-             >
-               <p className="text-sm text-white">
-                 click mich!
-               </p>
-             </div>
-           </div>
-         </div>
-        
-       </div>
-                             </Tooltip>
-                
-        </div>
+           
+<img
+  alt="cocktail"
+  src="cocktail400.png"
+  className="absolute inset-0 h-full w-full object-contain opacity-75 transition-opacity group-hover:opacity-50"
+/>
+
+<div className="relative p-4 sm:p-6 lg:p-8">
+  <p className="text-sm font-medium uppercase tracking-widest text-yellow-600">
+    menue - drinks
+  </p>
+
+  <p className="text-xl font-bold text-white sm:text-3xl">Longdrinks</p>
+
+  <div className="mt-32 sm:mt-48 lg:mt-64">
+    <div
+      className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+    >
+      <p className="text-xl text-white">
+        click mich!!!
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+          
+          </div>
       </div>
 
       <Transition appear show={isOpen} as={Fragment}>
@@ -91,14 +88,16 @@ export default function Modale07() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="border-gray-100 w-full max-w-7xl transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
-                  <Section id='Modale07'>
-        <Container>
-          
+                 <Dialog.Panel className="border-gray-100 w-full max-w-7xl transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                <Section>
+      <Container>
+        <div className='11/12 flex flex-col items-center justify-center'>
+        
        
-
-           
-        </Container>
+        <SpecialMenuLongDrink/>
+        </div>
+         
+      </Container>
       </Section>
                           <div className="mt-4">
                     <button
