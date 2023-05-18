@@ -18,7 +18,7 @@ export default function Modal01() {
 
   return (
     <>
-      <div className="inset-0 flex items-center justify-center">
+      <div className="inset-0 flex items-center justify-center border border-red-500">
         <div className="example-wrapper">
           <Tooltip
             content="öffne Kartenillustration Alt-Freiburg !!!"

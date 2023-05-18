@@ -135,6 +135,8 @@ input:-webkit-autofill:focus {
  height: 15.625rem;
  object-fit: cover;
  object-position: 50% 50%;
+ cursor: pointer;
+
 
  @media only screen and (min-width: 31.375em){
  //height: 25rem;

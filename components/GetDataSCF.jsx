@@ -5,7 +5,6 @@ import axios from "axios";
 import { data } from "autoprefixer";
 import Image from "next/image";
 import { defaultOrder } from "ol/renderer/vector";
-//import SCFLogo from "../../../public/SCFLogo";
 
 const GetSCF = () => {
   const [tabelleBL, setTabelleBL] = useState([]);
@@ -25,11 +24,14 @@ const GetSCF = () => {
   const getData = async () => {
     const response = await axios(Url, { headers: { "X-Auth-Token": Token } });
     setTabelleBL(response.data.standings[0].table);
+    console.log(data.standings[0].table);
   };
   const Emblem = tabelleBL
     .filter((Tabelle) => Tabelle.team.name === "SC Freiburg")
     .map((data) => data.team.crestUrl);
-  const Rang = tabelleBL
+
+
+      const Rang = tabelleBL
     .filter((Tabelle) => Tabelle.team.name === "SC Freiburg")
     .map((data) => data.position);
   const Spieltag = tabelleBL
@@ -58,7 +60,7 @@ const GetSCF = () => {
       <div className=" rounded-2xl border text-center font-mono font-black text-white lg:w-8/12  lg:bg-gray-700 lg:px-3 lg:text-[2.33rem] xl:right-36 2xl:left-[23vw] 2xl:top-[20vh]">
         
           
-          <div className="flex flex-cols flex-wrap items-center justify-center gap-x-5">
+          <div className="flex flex-row flex-wrap items-center justify-center gap-x-5">
            
 
             <img src={Emblem} height="32" width="36" alt="Emblem" />

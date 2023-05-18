@@ -23,7 +23,8 @@ const Drinks = () => (
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <TypingText className="text-yellow-600 headingA " title="| Drinks & Snacks" textStyles="text-center" />
-      <TitleText title={<>Drinks and Snacks</>} textStyles="text-yellow text-center" />
+      <h1 className='mt-3 text-center headingA text-yellow-600 text-4xl md:text-5xl lg:text-7xl'>Drinks & Snacks</h1>
+      {/*<TitleText title={<>Drinks and Snacks</>} textStyles="text-yellow text-center" />*/}
       <div className="mt-[50px] flex flex-col gap-[30px]">
         {insights.map((item, index) => (
           <InsightCard key={`insight-${index}`} {...item} index={index + 1} />
@@ -31,59 +32,41 @@ const Drinks = () => (
       </div>
 
 
-      <section className="grid-container rounded-2xl bg-slate-600/10">
-          <div className='col'>
+      <section className="grid-container rounded-2xl bg-slate-600/20">
+          <div className='col hover:border-8 hover:border-red-600 hover:rounded-xl'>
               <figure className='grid-item'>
                 <Modale05 className="modale"/>
               </figure>
           </div>
-          <div className='col'>
+          <div className='col hover:border-8 hover:border-red-700 hover:rounded-xl'>
               <figure className='grid-item'>
                 <Modale06 className="modale"/>
               </figure>
           </div>
-          <div className='col'>
+          <div className='col hover:border-8 hover:border-red-400 hover:rounded-xl'>
               <figure className='grid-item'>
                 <Modale07 className="modale"/>
               </figure>
           </div>
-          <div className='col'>
+          <div className='col hover:border-8 hover:border-red-900 hover:rounded-xl'>
               <figure className='grid-item'>
                 <Modale08 className="modale"/>
               </figure>
           </div>
-          <div className='col'>
+          <div className='col hover:border-8 hover:border-red-700 hover:rounded-xl'>
               <figure className='grid-item'>
                 <Modale09 className="modale"/>
               </figure>
           </div>
-          <div className='col'>
+          <div className='col hover:border-8 hover:border-red-800 hover:rounded-xl'>
               <figure className='grid-item'>
                 <Modale10 className="modale"/>
               </figure>
           </div>
 
-
-
-
-
-
-
-
-
       </section>
       
-
-
-
-
     </motion.div>
   </section>
 );
-export default Drinks;
-
-
-      
-
-
-
+export default Drinks

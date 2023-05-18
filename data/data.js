@@ -363,4 +363,4 @@ const awards = [
   },
 ];
 
-export default { biereOffen, flaschenPost, weineWeiss, weineRot, cocktails, longDrinks, softDrinks, kurze, snacks, likoere };
+export default { biereOffen, flaschenPost, weineWeiss, weineRot, cocktails, longDrinks, softDrinks, kurze, snacks, likoere, warmgetränke };

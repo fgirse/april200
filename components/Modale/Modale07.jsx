@@ -51,9 +51,9 @@ export default function Modale07() {
     <div
       className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
     >
-      <p className="text-xl text-white">
-        click mich!!!
-      </p>
+      <p className="bg-yellow-600 rounded-2xl text-xl text-center text-white">
+          click mich!!!
+        </p>
     </div>
   </div>
 </div>
