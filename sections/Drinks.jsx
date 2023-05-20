@@ -14,7 +14,7 @@ import Modale09 from "../components/Modale/Modale09";
 import Modale10 from "../components/Modale/Modale10";
 
 const Drinks = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section id="section-drinks" className={`${styles.paddings} relative z-10`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"

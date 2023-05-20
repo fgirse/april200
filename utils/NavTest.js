@@ -14,12 +14,13 @@ const user = {
 const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'Über uns', href: '#section-about', current: false },
-  { name: 'Philosophie', href: '#section-philosophy', current: false },
   { name: 'Features', href: '#section-features', current: false },
   { name: 'Drinks&Snacks', href: '#section-drinks', current: false },
+  { name: 'Sportarene', href: '#section-sportarena', current: false },
   { name: 'Events', href: '#section-events', current: false },
   { name: 'Team', href: '#section-team', current: false },
   { name: 'Wohin?', href: '#section-wohin', current: false },
+  
 ]
 const userNavigation = [
   { name: 'Your Profile', href: '#' },

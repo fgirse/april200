@@ -24,7 +24,7 @@ const GetSCF = () => {
   const getData = async () => {
     const response = await axios(Url, { headers: { "X-Auth-Token": Token } });
     setTabelleBL(response.data.standings[0].table);
-    console.log(data.standings[0].table);
+    console.log(data)
   };
   const Emblem = tabelleBL
     .filter((Tabelle) => Tabelle.team.name === "SC Freiburg")
@@ -57,78 +57,49 @@ const GetSCF = () => {
     .map((data) => data.points);
   return (
     <>
-      <div className=" rounded-2xl border text-center font-mono font-black text-white lg:w-8/12  lg:bg-gray-700 lg:px-3 lg:text-[2.33rem] xl:right-36 2xl:left-[23vw] 2xl:top-[20vh]">
+      <div className="w-[100vw] h-full rounded-2xl text-center font-mono font-black text-white lg:px-3 lg:text-[2.33rem] xl:right-36 2xl:left-[23vw] 2xl:top-[20vh]">
         
           
-          <div className="flex flex-row flex-wrap items-center justify-center gap-x-5">
-           
+          <div className="grid-sportarena w-[100vw]">
+          
+              <div className="mt-5 mb-12 flex flex-col items-center leading-8">
+              <img src={Emblem} height="166" width="133" alt="Emblem" />
+              </div>
 
-            <img src={Emblem} height="32" width="36" alt="Emblem" />
-
-            <p className="ml-5"> BUNDESLIGA </p>
-            <svg
-              className="h-8 w-8"
-              stroke="#ffCC00"
-              fill="white"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >              <path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" />
-            </svg>
-            <p>
-              Spieltag: <span className="ml-1 text-amber-200 text-cemter text-3xl">{Spieltag}</span>
+            
+            
+            <p id="spieltag" lassName="text-3xl leading-8 lg:text-[7rem]">
+              Spieltag: <span className="ml-1 text-amber-200 text-3xl lg:text-[7rem]">{Spieltag}</span>
             </p>
             
-            <p>
+            <p id="rang">
               {" "}
               Rang: <span className="ml-1 text-amber-200">{Rang}</span>
             </p>
-            <svg
-              className="h-8 w-8"
-              stroke="#ffCC00"
-              fill="white"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M4555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" />
-            </svg>
-            <p>
+         
+            <p id="torverhältnis">
               Torverhältnis:{" "}
               <span className="ml-1 text-amber-200">
                 {ToreErzielt} : {ToreErhalten}
               </span>
             </p>
-            <svg
-              className="h-8 w-8"
-              stroke="#ffCC00"
-              fill="white"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/200/svg"
-            >
-              <path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" />
-            </svg>
-            <p className="">
+          
+            <p id="gewonnen" className="">
               Siege:<span className="ml-1 text-amber-200">{Siege}</span>
             </p>
          
-            <p className="">
+            <p id="verloren" className="">
               Niederlagen:
               <span className="ml-1 text-amber-200">{Niederlagen}</span>
             </p>
       
-            <p className="">
+            <p id="remis" className="">
               Unentschieden:<span className="ml-1 text-amber-200">{Remis}</span>
             </p>
-            <svg
-              className="h-8 w-8"
-              stroke="#ffCC00"
-              fill="white"
-              viewBox="0 0 20 20"              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" />
-            </svg>
-            <p className="">
+           
+            <p id="punkte" className="bg-red-600">
               Punkte:<span className="ml-1 text-amber-200">{Punkte}</span>
-            </p>
+  </p>
           </div>
         
       </div>
