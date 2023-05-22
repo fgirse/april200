@@ -24,14 +24,13 @@ const GetSCF = () => {
   const getData = async () => {
     const response = await axios(Url, { headers: { "X-Auth-Token": Token } });
     setTabelleBL(response.data.standings[0].table);
-    console.log(data)
+    console.log(data);
   };
   const Emblem = tabelleBL
     .filter((Tabelle) => Tabelle.team.name === "SC Freiburg")
     .map((data) => data.team.crestUrl);
 
-
-      const Rang = tabelleBL
+  const Rang = tabelleBL
     .filter((Tabelle) => Tabelle.team.name === "SC Freiburg")
     .map((data) => data.position);
   const Spieltag = tabelleBL
@@ -57,51 +56,44 @@ const GetSCF = () => {
     .map((data) => data.points);
   return (
     <>
-      <div className="w-[100vw] h-full rounded-2xl text-center font-mono font-black text-white lg:px-3 lg:text-[2.33rem] xl:right-36 2xl:left-[23vw] 2xl:top-[20vh]">
-        
-          
-          <div className="grid-sportarena w-[100vw]">
-          
-              <div className="mt-5 mb-12 flex flex-col items-center leading-8">
-              <img src={Emblem} height="166" width="133" alt="Emblem" />
-              </div>
+      <div className="w-full min-h-screen bg-red-700/30 rounded-2xl flex flex-col items-center">
+        <div className="flex flex-row items-center justify-center gap-x-9 ">
+          <h1 className="px-12 py-12 text-center text-white text-4xl md:text-6xl lg:text-7xl">
+            SC Freiburg
+          </h1>
+          <img src={Emblem} height="166" width="133" alt="Emblem" />
+        </div>
+        <p className="bg-citrogreen border-8 border-yellow-400  rounded-2xl p-3 text-3xl text-center text-white md:4xl lg:text-[3.00rem]">
+          {Spieltag}. Spieltag
+        </p>
+        <p id="rang" className="mt-[3vh] h-24 w-48 text-white text-3xl">
+          {" "}
+          Rang: <span className="text-3xl text-amber-200">{Rang}</span>
+        </p>
 
-            
-            
-            <p id="spieltag" lassName="text-3xl leading-8 lg:text-[7rem]">
-              Spieltag: <span className="ml-1 text-amber-200 text-3xl lg:text-[7rem]">{Spieltag}</span>
-            </p>
-            
-            <p id="rang">
-              {" "}
-              Rang: <span className="ml-1 text-amber-200">{Rang}</span>
-            </p>
-         
-            <p id="torverhältnis">
-              Torverhältnis:{" "}
-              <span className="ml-1 text-amber-200">
-                {ToreErzielt} : {ToreErhalten}
-              </span>
-            </p>
-          
-            <p id="gewonnen" className="">
-              Siege:<span className="ml-1 text-amber-200">{Siege}</span>
-            </p>
-         
-            <p id="verloren" className="">
-              Niederlagen:
-              <span className="ml-1 text-amber-200">{Niederlagen}</span>
-            </p>
-      
-            <p id="remis" className="">
-              Unentschieden:<span className="ml-1 text-amber-200">{Remis}</span>
-            </p>
-           
-            <p id="punkte" className="bg-red-600">
-              Punkte:<span className="ml-1 text-amber-200">{Punkte}</span>
-  </p>
-          </div>
-        
+        <p id="punkte" className=" text-center h-24 w-48 text-white text-3xl">
+          Punkte:
+          <span className=" h-24 w-48 text-amber-200 text-3xl">{Punkte}</span>
+        </p>
+        <p id="torverhältnis" className="h-24 w-48 text-white text-3xl">
+          Torverhältnis:{" "}
+          <span className="text-3xl text-amber-200">
+            {ToreErzielt} : {ToreErhalten}
+          </span>
+        </p>
+
+        <p id="gewonnen" className="h-24 w-48 text-white text-3xl">
+          Siege: <span className="text-3xl text-amber-200">{Siege}</span>
+        </p>
+
+        <p id="verloren" className="h-24 w-48 text-white text-3xl">
+          Niederlagen
+          <span className="text-3xl text-amber-200">{Niederlagen}</span>
+        </p>
+
+        <p id="remis" className="h-24 w-48 text-white text-3xl">
+          Unentschieden:<span className="ml-1 text-amber-200">{Remis}</span>
+        </p>
       </div>
     </>
   );

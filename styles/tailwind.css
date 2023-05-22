@@ -26,6 +26,12 @@ input:-webkit-autofill:focus {
 }
 
 
+.bg-citrogreen {
+background-color: rgba(216, 255, 0, 1);
+
+}
+
+
 /* architects-daughter-regular - latin */
 @font-face {
   font-family: "Architects Daughter";
@@ -150,53 +156,40 @@ input:-webkit-autofill:focus {
 }
 
 .grid-sportarena{
-
-  grid-template-columns: repeat(6, minmax(100px, 1fr));
-  grid-template-rows: 12vh 12vh 12vh 12v;
+  position: flex;
+  flex-directon: flex-row;
+  flex-wrap: wrap;
   grid-gap: 2vw;
-  grid-area-templates:  "spieltag" "spieltag" "rang" "rang" "" ""
-                        "gewonnen" "gewonnen"  "verloren"  "verloren" "remis" "remis"
-                        "torverhältnis" "torverhältnis" "torverhältnis" "torverhältnis" "" ""
-                        "punkte" "punkte";
                     
 }
 
-.grid-spieltag {
-  grid-area: spieltag;
+#grid-rang {
+  
   background-color: red;
 }
 
-.grid-rang {
-  grid-area: rang;
+#grid-gewonnen {
   background-color: red;
 }
 
-.grid-gewonnen {
-  grid-area: gewonnen;
-  background-color: red;
+#grid-verloren {
+
+
 }
 
-.grid-verloren {
-  grid-area: verloren;
-  background-color: red;
+#grid-remis {
+
 }
 
-.grid-remis {
-  grid-area: remis;
-  background-color: red;
+#grid-toregeschossen {
+
 }
 
-.grid-toregeschossen {
-  grid-area: toregeschossen;
-  background-color: red;
+#grid-toreerhalten {
+  
 }
 
-.grid-toreerhalten {
-  grid-area: toreerhalten;
-  background-color: red;
-}
+#grid-punkte {
 
-.grid-punkte {
-  grid-area: punkte;
   background-color: red;
 }

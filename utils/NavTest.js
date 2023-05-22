@@ -16,7 +16,7 @@ const navigation = [
   { name: 'Über uns', href: '#section-about', current: false },
   { name: 'Features', href: '#section-features', current: false },
   { name: 'Drinks&Snacks', href: '#section-drinks', current: false },
-  { name: 'Sportarene', href: '#section-sportarena', current: false },
+  { name: 'Sportarena', href: '#section-sportarena', current: false },
   { name: 'Events', href: '#section-events', current: false },
   { name: 'Team', href: '#section-team', current: false },
   { name: 'Wohin?', href: '#section-wohin', current: false },

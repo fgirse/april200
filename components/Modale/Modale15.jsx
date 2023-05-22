@@ -76,24 +76,16 @@ export default function Modale15() {
                 <Dialog.Panel className="border-yellow-600 w-full max-w-7xl bg-[url('/sportarena.jpg')] bg-cover bg-no-repeat transform overflow-hidden rounded-2xl border-8 bg-[#0C0C0C] p-2 text-left align-middle shadow-xl transition-all">
                   <Section>
                     <section className="mx-auto max-w-screen xl:px-4 py-1 sm:px-6 sm:py-2 lg:px-2 lg:py-1">
-                      <h1 className="mb-5 text-yellow-600 headingA text-center text-3xl lg:text-[8rem]">
+                      <h1 className="mb-5 text-yellow-600 headingA text-center text-3xl md:text-7xl lg:text-[6rem] lg:leading-8">
                         Die Bundesliga
                       </h1>{" "}
-                      <h2 className="py-5 mx-auto text-2xl font-bold text-center text-gray-300 sm:text-4xl">
+                      <h2 className="py-5 mx-auto text-2xl font-bold text-center text-gray-300 sm:text-3xl">
                         Hier findest Du alle Daten, Fakten über den aktuellen
                         Tabellenstand des SC Freiburgs.{" "}
                       </h2>
-                      <div className="mt-3 grid grid-cols-1g gap-8 lg:grid-cols-1 lg:gap-16">
-                        <div className="relative overflow-hidden sm:h-80 lg:h-full">
-                          <div className="lg:py-1">
-                            <article className="flex flex-col items-center  low-hidden ">
-                              <div className="mb-2 h-full w-[100vw] border border-yellow-500 text-xs md:w-[80vw]  xl:w-[80vw] flex flex-col justify-center items-center">
-                                <GetDataSCF className=""></GetDataSCF>
-                              </div>
-                            </article>
-                          </div>
-                        </div>
-                      </div>
+                      <article className="flex flex-col items-center low-hidden mb-2 h-full w-[100v]  flex flex-col justify-center items-center ">
+                        <GetDataSCF className=""></GetDataSCF>
+                      </article>
                     </section>
                   </Section>
                   <div className="mt-4">
