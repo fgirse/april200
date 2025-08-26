@@ -14,7 +14,7 @@ const Hero = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-   <div className='mx-auto mt-[1vh] bg-gray-900/30 w-96 h-96 flex flex-col items-center justify-between'>
+   <div className='mx-auto mt-[1vh] bg-gray-900/30 w-1/3 h-96 flex flex-col items-center justify-between'>
       <Image src="/LogoNeu.png"  width={500} height={300} alt="LogoNeu" className="object-contain w-[33vw] h-[24vh] md:mt-[0vh] md:w-[55vw] md:h-[36vh] lg:hidden "/>
 
       <div className="flex justify-center items-center flex-col relative z-10 ">
