@@ -1,9 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+import Image from 'next/image';
 
 const Hero = () => (
   <section className={`${styles.yPaddings} mx-auto bg-hero relative top-[2vh] h-screen bg-no-repeat pl- lg:h-screen lg:bg-no-repeat lg:bg-right`}>
@@ -14,9 +14,9 @@ const Hero = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-   <div className='mx-auto mt-[1vh] bg-gray-900/30 w-[90vw] h-[80vh] flex flex-col items-center justify-between'>
-      <img src="/LogoNeu.png"   alt="LogoNeu" className="object-contain w-[33vw] h-[24vh] md:mt-[0vh] md:w-[55vw] md:h-[36vh] lg:hidden "/>
-      
+   <div className='mx-auto mt-[1vh] bg-gray-900/30 w-96 h-96 flex flex-col items-center justify-between'>
+      <Image src="/LogoNeu.png"  width={500} height={300} alt="LogoNeu" className="object-contain w-[33vw] h-[24vh] md:mt-[0vh] md:w-[55vw] md:h-[36vh] lg:hidden "/>
+
       <div className="flex justify-center items-center flex-col relative z-10 ">
         <motion.h1
           variants={textVariant(1.1)}
@@ -25,21 +25,21 @@ const Hero = () => (
           die
         </motion.h1>
         <motion.div
-          variants={textVariant(1.2)}         
+          variants={textVariant(1.2)}
           className="mt[3-vh] flex flex-row justify-center items-center"
         >
           <motion.h1 className="-mt-[12vh] headingA lg:-mt-[18vh] text-[2.9rem] sd:text-[5.66rem] md:text-[6rem] lg:text-[11rem] text-red-700 2xl:text-[12rem]">
             kiezkneipe
           </motion.h1>
-          
+
         </motion.div>
       </div>
       </div>
-      <motion.div                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+      <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
-        
+
       </motion.div>
     </motion.div>
   </section>
